@@ -44,7 +44,8 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 170.0, 181.0, 224.0, 22.0 ],
-					"style" : ""
+					"style" : "",
+					"text" : "set verb.in.1"
 				}
 
 			}
@@ -55,9 +56,9 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 34.0, 139.0, 106.0, 22.0 ],
+					"patching_rect" : [ 34.0, 139.0, 136.0, 22.0 ],
 					"style" : "",
-					"text" : "sprintf set %s.%ld"
+					"text" : "sprintf set #1.%s.%ld"
 				}
 
 			}
@@ -68,10 +69,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 34.0, 220.0, 44.0, 22.0 ],
-					"saved_object_attributes" : 					{
-						"attr_comment" : ""
-					}
-,
 					"style" : "",
 					"text" : "out~ 1"
 				}
@@ -98,6 +95,10 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 34.0, 68.0, 30.0, 22.0 ],
+					"saved_object_attributes" : 					{
+						"attr_comment" : ""
+					}
+,
 					"style" : "",
 					"text" : "in 1"
 				}

@@ -38,18 +38,6 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
-					"id" : "obj-11",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 210.0, 359.0, 358.693054, 22.0 ],
-					"style" : "",
-					"text" : "poly~ LAM.trigran~.p 1 @args #2 @parallel 1"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-14",
 					"maxclass" : "number",
 					"numinlets" : 1,
@@ -645,7 +633,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 232.5, 306.0, 135.0, 22.0 ],
+					"patching_rect" : [ 210.0, 306.0, 135.0, 22.0 ],
 					"style" : "",
 					"text" : "send~ #2.clock"
 				}
@@ -731,20 +719,9 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-11", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"order" : 1,
-					"source" : [ "obj-49", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-78", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"order" : 0,
 					"source" : [ "obj-49", 0 ]
 				}
 
