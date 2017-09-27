@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 463.0, 159.0, 644.0, 635.0 ],
+		"rect" : [ 463.0, 159.0, 471.0, 635.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -464,7 +464,7 @@
 			}
 , 			{
 				"box" : 				{
-					"comment" : "start (signal)",
+					"comment" : "bitsize (signal)",
 					"id" : "obj-15",
 					"index" : 3,
 					"maxclass" : "inlet",
@@ -569,7 +569,7 @@
 			}
 , 			{
 				"box" : 				{
-					"comment" : "duration (signal)",
+					"comment" : "samplerate (signal)",
 					"id" : "obj-10",
 					"index" : 2,
 					"maxclass" : "inlet",

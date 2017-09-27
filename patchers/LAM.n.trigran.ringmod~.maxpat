@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 463.0, 159.0, 644.0, 635.0 ],
+		"rect" : [ 463.0, 159.0, 301.0, 635.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -464,7 +464,7 @@
 			}
 , 			{
 				"box" : 				{
-					"comment" : "start (signal)",
+					"comment" : "wet gain (signal)w",
 					"id" : "obj-13",
 					"index" : 4,
 					"maxclass" : "inlet",
@@ -478,7 +478,7 @@
 			}
 , 			{
 				"box" : 				{
-					"comment" : "start (signal)",
+					"comment" : "dry gain (signal)",
 					"id" : "obj-15",
 					"index" : 3,
 					"maxclass" : "inlet",
@@ -583,7 +583,7 @@
 			}
 , 			{
 				"box" : 				{
-					"comment" : "duration (signal)",
+					"comment" : "frequency (signal)",
 					"id" : "obj-10",
 					"index" : 2,
 					"maxclass" : "inlet",

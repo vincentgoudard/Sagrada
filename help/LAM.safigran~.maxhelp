@@ -1702,7 +1702,7 @@
 					"destination" : [ "obj-80", 1 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 717.250031, 288.25, 139.499969, 288.25 ],
+					"midpoints" : [ 717.25003, 288.25, 139.499969, 288.25 ],
 					"source" : [ "obj-78", 1 ]
 				}
 
@@ -1798,13 +1798,13 @@
 			}
 , 			{
 				"name" : "LAM.safigran~.maxpat",
-				"bootpath" : "~/Documents/Max/Packages/lam-lib/patchers",
+				"bootpath" : "~/Documents/Max 7/Packages/Sagrada/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "LAM.safigran~.p.maxpat",
-				"bootpath" : "~/Documents/Max/Packages/lam-lib/patchers",
+				"bootpath" : "~/Documents/Max 7/Packages/Sagrada/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
