@@ -38,6 +38,21 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"comment" : "duration (signal)",
+					"id" : "obj-4",
+					"index" : 3,
+					"maxclass" : "inlet",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 431.0, 268.0, 30.0, 30.0 ],
+					"presentation_rect" : [ 431.0, 267.0, 0.0, 0.0 ],
+					"style" : ""
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-6",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -493,11 +508,11 @@
 				"box" : 				{
 					"id" : "obj-78",
 					"maxclass" : "newobj",
-					"numinlets" : 1,
+					"numinlets" : 2,
 					"numoutlets" : 0,
-					"patching_rect" : [ 225.653503, 322.0, 336.0, 22.0 ],
+					"patching_rect" : [ 225.653503, 322.0, 376.0, 22.0 ],
 					"style" : "",
-					"text" : "poly~ LAM.sagrada.wave~.p 1 @args #1 @parallel 1"
+					"text" : "poly~ LAM.sagrada.PSOLAwave~.p 1 @args #1 @parallel 1"
 				}
 
 			}

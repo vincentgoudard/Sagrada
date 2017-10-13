@@ -45,7 +45,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 119.0, 295.0, 51.0, 22.0 ],
-					"presentation_rect" : [ 119.0, 310.0, 0.0, 0.0 ],
 					"style" : "",
 					"text" : "-1.4236"
 				}
@@ -74,7 +73,6 @@
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 968.0, 295.0, 57.0, 22.0 ],
-					"presentation_rect" : [ 968.0, 296.0, 0.0, 0.0 ],
 					"style" : ""
 				}
 
@@ -102,7 +100,6 @@
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 897.0, 244.0, 57.0, 22.0 ],
-					"presentation_rect" : [ 942.0, 260.0, 0.0, 0.0 ],
 					"style" : ""
 				}
 
@@ -115,7 +112,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 897.0, 271.0, 63.0, 22.0 ],
-					"presentation_rect" : [ 942.0, 287.0, 0.0, 0.0 ],
 					"style" : "",
 					"text" : "sig~ 1000"
 				}
@@ -184,7 +180,6 @@
 					"numinlets" : 2,
 					"numoutlets" : 0,
 					"patching_rect" : [ -91.5, 478.0, 130.0, 130.0 ],
-					"presentation_rect" : [ 28.0, 483.0, 0.0, 0.0 ],
 					"style" : "",
 					"trigger" : 1
 				}
@@ -253,7 +248,6 @@
 					"numinlets" : 2,
 					"numoutlets" : 0,
 					"patching_rect" : [ 100.0, 495.0, 130.0, 130.0 ],
-					"presentation_rect" : [ 28.0, 454.0, 0.0, 0.0 ],
 					"style" : "",
 					"trigger" : 1
 				}
@@ -491,7 +485,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 582.0, 256.0, 56.333374, 22.0 ],
+					"patching_rect" : [ 582.0, 256.0, 57.0, 22.0 ],
 					"style" : ""
 				}
 
@@ -1680,7 +1674,6 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 478.416687, 45.5, 219.0, 23.0 ],
-									"presentation_rect" : [ 478.416687, 45.5, 0.0, 0.0 ],
 									"style" : "",
 									"text" : "size 1000, fill sin 2, apply hanning"
 								}
@@ -3194,8 +3187,8 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-80" : [ "live.gain~", "live.gain~", 0 ],
-			"obj-29" : [ "live.gain~[1]", "live.gain~", 0 ]
+			"obj-29" : [ "live.gain~[1]", "live.gain~", 0 ],
+			"obj-80" : [ "live.gain~", "live.gain~", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
@@ -3305,13 +3298,27 @@
 			}
 , 			{
 				"name" : "LAM.sagrada.wave~.maxpat",
+				"bootpath" : "~/Documents/Max 7/Packages/Sagrada/patchers",
+				"patcherrelativepath" : "../patchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "LAM.sagrada.wave~.p.maxpat",
+				"bootpath" : "~/Documents/Max 7/Packages/Sagrada/patchers",
+				"patcherrelativepath" : "../patchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "LAM.sagrada.multiout~.maxpat",
 				"bootpath" : "~/Documents/Max/Packages/lam-lib/patchers",
 				"patcherrelativepath" : "../../../../Max/Packages/lam-lib/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "LAM.sagrada.wave~.p.maxpat",
+				"name" : "LAM.sagrada.multiout~.p.maxpat",
 				"bootpath" : "~/Documents/Max/Packages/lam-lib/patchers",
 				"patcherrelativepath" : "../../../../Max/Packages/lam-lib/patchers",
 				"type" : "JSON",
@@ -3336,20 +3343,6 @@
 				"bootpath" : "~/vg.PROJETS/2013.ONE/_PATCHERS/filigramophone",
 				"patcherrelativepath" : "../../../../../vg.PROJETS/2013.ONE/_PATCHERS/filigramophone",
 				"type" : "gDSP",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "LAM.sagrada.multiout~.maxpat",
-				"bootpath" : "~/Documents/Max/Packages/lam-lib/patchers",
-				"patcherrelativepath" : "../../../../Max/Packages/lam-lib/patchers",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "LAM.sagrada.multiout~.p.maxpat",
-				"bootpath" : "~/Documents/Max/Packages/lam-lib/patchers",
-				"patcherrelativepath" : "../../../../Max/Packages/lam-lib/patchers",
-				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
