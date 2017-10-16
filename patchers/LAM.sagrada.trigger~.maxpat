@@ -109,7 +109,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 62.0, 346.0, 333.0, 22.0 ],
 					"style" : "",
-					"text" : "poly~ LAM.sagrada.busytrigger~.p 1 @args #2"
+					"text" : "poly~ LAM.sagrada.trigger~.p 1 @args #2"
 				}
 
 			}
