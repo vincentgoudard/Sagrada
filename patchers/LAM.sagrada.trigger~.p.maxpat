@@ -44,8 +44,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 25.0, 225.0, 169.0, 22.0 ],
-					"style" : "",
-					"text" : "myContext/ck/1"
+					"style" : ""
 				}
 
 			}
@@ -95,6 +94,10 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 21.0, 23.0, 37.0, 22.0 ],
+					"saved_object_attributes" : 					{
+						"attr_comment" : ""
+					}
+,
 					"style" : "",
 					"text" : "in~ 1"
 				}
