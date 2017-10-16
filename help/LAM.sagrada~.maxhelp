@@ -20547,7 +20547,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 235.0, 170.0, 317.0, 22.0 ],
 					"style" : "",
-					"text" : "LAM.sagrada.trigger~ 16 myContext"
+					"text" : "LAM.sagrada.trigger~ 16 myContext @steal 1"
 				}
 
 			}
