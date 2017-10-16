@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 80.0, 324.0, 528.0, 511.0 ],
+		"rect" : [ 80.0, 324.0, 815.0, 507.0 ],
 		"bgcolor" : [ 0.9, 0.91, 0.91, 1.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
@@ -201,15 +201,15 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 50.0, 131.0, 119.0, 22.0 ],
+									"patching_rect" : [ 50.0, 131.0, 147.0, 22.0 ],
 									"style" : "",
-									"text" : "set /myContext/busy"
+									"text" : "set /myBusyContext/busy"
 								}
 
 							}
 , 							{
 								"box" : 								{
-									"buffername" : "/myContext/busy",
+									"buffername" : "/myBusyContext/busy",
 									"id" : "obj-3",
 									"maxclass" : "waveform~",
 									"numinlets" : 5,
@@ -718,13 +718,13 @@
 					"presentation_rect" : [ 0.0, 0.0, 50.0, 21.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_mmin" : -70.0,
-							"parameter_longname" : "live.gain~",
-							"parameter_initial" : [ 0.0 ],
 							"parameter_mmax" : 6.0,
 							"parameter_shortname" : "live.gain~",
 							"parameter_unitstyle" : 4,
-							"parameter_type" : 0
+							"parameter_type" : 0,
+							"parameter_mmin" : -70.0,
+							"parameter_longname" : "live.gain~",
+							"parameter_initial" : [ 0.0 ]
 						}
 
 					}
@@ -852,7 +852,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 59.0, 104.0, 640.0, 480.0 ],
+						"rect" : [ 59.0, 104.0, 266.0, 214.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -881,13 +881,28 @@
 						"subpatcher_template" : "",
 						"boxes" : [ 							{
 								"box" : 								{
-									"id" : "obj-3",
-									"maxclass" : "comment",
+									"id" : "obj-6",
+									"maxclass" : "toggle",
 									"numinlets" : 1,
-									"numoutlets" : 0,
-									"patching_rect" : [ 161.0, 157.0, 150.0, 20.0 ],
+									"numoutlets" : 1,
+									"outlettype" : [ "int" ],
+									"parameter_enable" : 0,
+									"patching_rect" : [ 121.0, 56.0, 24.0, 24.0 ],
+									"style" : ""
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-4",
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 121.0, 87.0, 53.0, 22.0 ],
+									"presentation_rect" : [ 138.0, 218.0, 0.0, 0.0 ],
 									"style" : "",
-									"text" : "change granulated buffer"
+									"text" : "steal $1"
 								}
 
 							}
@@ -898,7 +913,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 50.0, 100.0, 79.0, 22.0 ],
+									"patching_rect" : [ 33.0, 30.0, 79.0, 22.0 ],
 									"style" : "",
 									"text" : "loadmess 16"
 								}
@@ -912,7 +927,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "", "bang" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 50.0, 128.0, 50.0, 22.0 ],
+									"patching_rect" : [ 33.0, 58.0, 50.0, 22.0 ],
 									"style" : ""
 								}
 
@@ -924,7 +939,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 50.0, 174.0, 61.0, 22.0 ],
+									"patching_rect" : [ 33.0, 87.0, 61.0, 22.0 ],
 									"style" : "",
 									"text" : "voices $1"
 								}
@@ -938,7 +953,7 @@
 									"maxclass" : "outlet",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 50.0, 256.0, 30.0, 30.0 ],
+									"patching_rect" : [ 33.0, 127.0, 30.0, 30.0 ],
 									"style" : ""
 								}
 
@@ -962,6 +977,20 @@
 								"patchline" : 								{
 									"destination" : [ "obj-16", 0 ],
 									"source" : [ "obj-21", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-10", 0 ],
+									"source" : [ "obj-4", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-4", 0 ],
+									"source" : [ "obj-6", 0 ]
 								}
 
 							}
@@ -1417,7 +1446,7 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "LAM.accumwrapbusy.gendsp",
+				"name" : "LAM.sagrada.voicerouter.gendsp",
 				"bootpath" : "~/Documents/Max 7/Packages/Sagrada/patchers",
 				"patcherrelativepath" : "../patchers",
 				"type" : "gDSP",

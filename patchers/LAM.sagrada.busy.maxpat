@@ -307,7 +307,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 147.0, 130.018921, 139.0, 22.0 ],
+					"patching_rect" : [ 147.0, 130.018921, 165.0, 22.0 ],
 					"style" : "",
 					"text" : "index~ #1/busy"
 				}
@@ -315,7 +315,7 @@
 			}
 , 			{
 				"box" : 				{
-					"comment" : "",
+					"comment" : "busy state (int/signal)",
 					"id" : "obj-21",
 					"index" : 1,
 					"maxclass" : "inlet",
