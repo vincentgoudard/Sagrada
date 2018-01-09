@@ -90,7 +90,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 133.0, 143.5, 136.0, 24.0 ],
-									"presentation_rect" : [ 159.0, 145.0, 0.0, 0.0 ],
 									"style" : "",
 									"text" : "simple accumulation"
 								}
@@ -458,7 +457,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 50.0, 284.5, 46.0, 22.0 ],
+									"patching_rect" : [ 82.0, 285.5, 46.0, 22.0 ],
 									"style" : "",
 									"text" : "history"
 								}
@@ -600,7 +599,7 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-3", 1 ],
-									"midpoints" : [ 59.5, 317.5, 194.75, 317.5, 194.75, 101.5, 70.0, 101.5 ],
+									"midpoints" : [ 91.5, 317.5, 194.75, 317.5, 194.75, 101.5, 70.0, 101.5 ],
 									"order" : 0,
 									"source" : [ "obj-5", 0 ]
 								}
@@ -645,7 +644,8 @@
 								}
 
 							}
- ]
+ ],
+						"autosave" : 0
 					}
 ,
 					"patching_rect" : [ 130.75, 92.5, 88.0, 22.0 ],

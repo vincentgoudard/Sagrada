@@ -58,7 +58,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 416.75, 356.0, 47.0, 22.0 ],
+					"patching_rect" : [ 419.5, 406.0, 47.0, 22.0 ],
 					"style" : "",
 					"text" : "*~ 500"
 				}
@@ -71,7 +71,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 416.75, 328.0, 35.0, 22.0 ],
+					"patching_rect" : [ 419.5, 378.0, 35.0, 22.0 ],
 					"style" : "",
 					"text" : ">~ 1"
 				}
@@ -1054,16 +1054,16 @@
 					"outlettype" : [ "signal", "signal", "", "float", "list" ],
 					"parameter_enable" : 1,
 					"patching_rect" : [ 57.0, 616.5, 238.0, 38.0 ],
-					"presentation_rect" : [ 0.0, 0.0, 50.0, 24.0 ],
+					"presentation_rect" : [ 0.0, 0.0, 50.0, 38.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_mmin" : -70.0,
-							"parameter_longname" : "live.gain~[1]",
-							"parameter_initial" : [ 0.0 ],
 							"parameter_mmax" : 6.0,
 							"parameter_shortname" : "live.gain~",
 							"parameter_unitstyle" : 4,
-							"parameter_type" : 0
+							"parameter_type" : 0,
+							"parameter_mmin" : -70.0,
+							"parameter_longname" : "live.gain~[1]",
+							"parameter_initial" : [ 0.0 ]
 						}
 
 					}
@@ -1363,7 +1363,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 427.0, 385.0, 66.0, 20.0 ],
+					"patching_rect" : [ 521.0, 387.0, 66.0, 20.0 ],
 					"style" : "",
 					"text" : "grain pitch"
 				}
@@ -2744,7 +2744,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ -0.5, 59.060059, 824.0, 74.0 ],
 					"style" : "",
-					"text" : "Here is an example of grain-layer management.\nThe object \"LAM.sagrada.multilayer\" output trigger clicks, an incrementing grainCount and a layer index.\nWe mapped the layer index on the pitch value, and mapped the grainCount to the enveloppe.\nGrainCount returns -1 for the last grain (so that we know it is the last grain)\nThe 1st grain is modulated by an expo-decay enveloppe (stored in buffer Enveloppe1) and the following grains are modulated by a hanning enveloppe. "
+					"text" : "Here is an example of grain-layer management.\nThe object \"LAM.sagrada.multilayer\" output trigger clicks, an incrementing grainCount and a layer index.\nThe layer index is mapped on the pitch value, and the grainCount is mapped to the choice of enveloppe.\nGrainCount returns -1 for the last grain (so that we know it is the last grain)\nThe 1st grain is modulated by an expo-decay enveloppe (stored in buffer Enveloppe1) and the following grains are modulated by a hanning enveloppe. "
 				}
 
 			}
@@ -3771,12 +3771,12 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-80" : [ "live.gain~[1]", "live.gain~", 0 ],
 			"obj-81::obj-47::obj-11" : [ "live.menu[1]", "live.menu", 0 ],
-			"obj-81::obj-47::obj-43" : [ "live.numbox[3]", "live.numbox", 0 ],
-			"obj-81::obj-47::obj-9" : [ "live.numbox[4]", "live.numbox", 0 ],
 			"obj-81::obj-47::obj-24" : [ "live.numbox[7]", "live.numbox", 0 ],
-			"obj-81::obj-47::obj-17" : [ "live.numbox[5]", "live.numbox", 0 ]
+			"obj-81::obj-47::obj-43" : [ "live.numbox[3]", "live.numbox", 0 ],
+			"obj-80" : [ "live.gain~[1]", "live.gain~", 0 ],
+			"obj-81::obj-47::obj-17" : [ "live.numbox[5]", "live.numbox", 0 ],
+			"obj-81::obj-47::obj-9" : [ "live.numbox[4]", "live.numbox", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
@@ -3795,15 +3795,22 @@
 			}
 , 			{
 				"name" : "LAM.sagrada.trigger~.maxpat",
-				"bootpath" : "~/Documents/Max/Packages/lam-lib/patchers",
-				"patcherrelativepath" : "../../../../Max/Packages/lam-lib/patchers",
+				"bootpath" : "~/Documents/Max 7/Packages/Sagrada/patchers",
+				"patcherrelativepath" : "../patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
+				"name" : "LAM.sagrada.voicerouter.gendsp",
+				"bootpath" : "~/Documents/Max 7/Packages/Sagrada/patchers",
+				"patcherrelativepath" : "../patchers",
+				"type" : "gDSP",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "LAM.sagrada.trigger~.p.maxpat",
-				"bootpath" : "~/Documents/Max/Packages/lam-lib/patchers",
-				"patcherrelativepath" : "../../../../Max/Packages/lam-lib/patchers",
+				"bootpath" : "~/Documents/Max 7/Packages/Sagrada/patchers",
+				"patcherrelativepath" : "../patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -3837,29 +3844,29 @@
 			}
 , 			{
 				"name" : "LAM.sagrada.multiout~.maxpat",
-				"bootpath" : "~/Documents/Max/Packages/lam-lib/patchers",
-				"patcherrelativepath" : "../../../../Max/Packages/lam-lib/patchers",
+				"bootpath" : "~/Documents/Max 7/Packages/Sagrada/patchers",
+				"patcherrelativepath" : "../patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "LAM.sagrada.multiout~.p.maxpat",
-				"bootpath" : "~/Documents/Max/Packages/lam-lib/patchers",
-				"patcherrelativepath" : "../../../../Max/Packages/lam-lib/patchers",
+				"bootpath" : "~/Documents/Max 7/Packages/Sagrada/patchers",
+				"patcherrelativepath" : "../patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "LAM.sagrada.iosetter~.maxpat",
-				"bootpath" : "~/Documents/Max/Packages/lam-lib/patchers",
-				"patcherrelativepath" : "../../../../Max/Packages/lam-lib/patchers",
+				"bootpath" : "~/Documents/Max 7/Packages/Sagrada/patchers",
+				"patcherrelativepath" : "../patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "LAM.sagrada.multiin~.maxpat",
-				"bootpath" : "~/Documents/Max/Packages/lam-lib/patchers",
-				"patcherrelativepath" : "../../../../Max/Packages/lam-lib/patchers",
+				"bootpath" : "~/Documents/Max 7/Packages/Sagrada/patchers",
+				"patcherrelativepath" : "../patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -3912,15 +3919,15 @@
 			}
 , 			{
 				"name" : "LAM.sagrada.play~.maxpat",
-				"bootpath" : "~/Documents/Max/Packages/lam-lib/patchers",
-				"patcherrelativepath" : "../../../../Max/Packages/lam-lib/patchers",
+				"bootpath" : "~/Documents/Max 7/Packages/Sagrada/patchers",
+				"patcherrelativepath" : "../patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "LAM.sagrada.play~.p.maxpat",
-				"bootpath" : "~/Documents/Max/Packages/lam-lib/patchers",
-				"patcherrelativepath" : "../../../../Max/Packages/lam-lib/patchers",
+				"bootpath" : "~/Documents/Max 7/Packages/Sagrada/patchers",
+				"patcherrelativepath" : "../patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -3947,22 +3954,22 @@
 			}
 , 			{
 				"name" : "LAM.sagrada.pan2~.maxpat",
-				"bootpath" : "~/Documents/Max/Packages/lam-lib/patchers",
-				"patcherrelativepath" : "../../../../Max/Packages/lam-lib/patchers",
+				"bootpath" : "~/Documents/Max 7/Packages/Sagrada/patchers",
+				"patcherrelativepath" : "../patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "LAM.sagrada.pan2~.p.maxpat",
-				"bootpath" : "~/Documents/Max/Packages/lam-lib/patchers",
-				"patcherrelativepath" : "../../../../Max/Packages/lam-lib/patchers",
+				"bootpath" : "~/Documents/Max 7/Packages/Sagrada/patchers",
+				"patcherrelativepath" : "../patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "pan2S.maxpat",
-				"bootpath" : "~/Documents/Max/Packages/lam-lib/patchers",
-				"patcherrelativepath" : "../../../../Max/Packages/lam-lib/patchers",
+				"bootpath" : "/Users/Shared/Max 7/Examples/spatialization/panning/lib",
+				"patcherrelativepath" : "../../../../../../Shared/Max 7/Examples/spatialization/panning/lib",
 				"type" : "JSON",
 				"implicit" : 1
 			}

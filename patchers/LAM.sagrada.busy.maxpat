@@ -38,6 +38,19 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-8",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "signal" ],
+					"patching_rect" : [ 78.0, 120.0, 35.0, 22.0 ],
+					"style" : "",
+					"text" : ">~ 0"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-7",
 					"maxclass" : "newobj",
 					"numinlets" : 2,
@@ -381,7 +394,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-1", 1 ],
+					"destination" : [ "obj-8", 0 ],
 					"source" : [ "obj-21", 0 ]
 				}
 
@@ -430,6 +443,23 @@
 					"source" : [ "obj-7", 0 ]
 				}
 
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-1", 1 ],
+					"source" : [ "obj-8", 0 ]
+				}
+
+			}
+ ],
+		"styles" : [ 			{
+				"name" : "tap",
+				"default" : 				{
+					"fontname" : [ "Lato Light" ]
+				}
+,
+				"parentstyle" : "",
+				"multi" : 0
 			}
  ]
 	}
