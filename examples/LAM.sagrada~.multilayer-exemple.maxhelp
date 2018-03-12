@@ -39,6 +39,20 @@
 		"subpatcher_template" : "LAM.lib.HelpPatcher",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-11",
+					"maxclass" : "toggle",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "int" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 191.0, 152.0, 24.0, 24.0 ],
+					"presentation_rect" : [ 191.0, 152.0, 24.0, 24.0 ],
+					"style" : ""
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-53",
 					"maxclass" : "newobj",
 					"numinlets" : 2,
@@ -970,13 +984,13 @@
 					"presentation_rect" : [ 57.0, 586.5, 238.0, 38.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_type" : 0,
-							"parameter_unitstyle" : 4,
 							"parameter_mmin" : -70.0,
 							"parameter_longname" : "live.gain~[1]",
 							"parameter_mmax" : 6.0,
 							"parameter_initial" : [ 0.0 ],
-							"parameter_shortname" : "live.gain~"
+							"parameter_shortname" : "live.gain~",
+							"parameter_type" : 0,
+							"parameter_unitstyle" : 4
 						}
 
 					}
@@ -1937,7 +1951,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 118.0, 370.5, 203.0, 22.0 ],
-									"presentation_linecount" : 2,
 									"presentation_rect" : [ 118.0, 370.5, 203.0, 22.0 ],
 									"style" : "",
 									"text" : "RELEASE = vibrating hamming"
@@ -2013,7 +2026,6 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 26.5, 400.0, 347.0, 23.0 ],
-									"presentation_linecount" : 2,
 									"presentation_rect" : [ 26.5, 400.0, 347.0, 23.0 ],
 									"style" : "",
 									"text" : "sizeinsamps 512, fill sin 5, apply hamming, apply hamming"
@@ -2105,7 +2117,6 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 26.5, 226.0, 326.0, 23.0 ],
-									"presentation_linecount" : 2,
 									"presentation_rect" : [ 26.5, 226.0, 326.0, 23.0 ],
 									"style" : "",
 									"text" : "sizeinsamps 512, fill 1, apply hamming, apply hamming"
@@ -3115,6 +3126,22 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-31", 0 ],
+					"order" : 1,
+					"source" : [ "obj-11", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-32", 0 ],
+					"order" : 0,
+					"source" : [ "obj-11", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-80", 0 ],
 					"source" : [ "obj-113", 0 ]
 				}
@@ -3412,12 +3439,12 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-81::obj-47::obj-17" : [ "live.numbox[5]", "live.numbox", 0 ],
-			"obj-81::obj-47::obj-9" : [ "live.numbox[4]", "live.numbox", 0 ],
-			"obj-81::obj-47::obj-24" : [ "live.numbox[7]", "live.numbox", 0 ],
-			"obj-80" : [ "live.gain~[1]", "live.gain~", 0 ],
 			"obj-81::obj-47::obj-43" : [ "live.numbox[3]", "live.numbox", 0 ],
+			"obj-81::obj-47::obj-9" : [ "live.numbox[4]", "live.numbox", 0 ],
+			"obj-80" : [ "live.gain~[1]", "live.gain~", 0 ],
 			"obj-81::obj-47::obj-11" : [ "live.menu[1]", "live.menu", 0 ],
+			"obj-81::obj-47::obj-24" : [ "live.numbox[7]", "live.numbox", 0 ],
+			"obj-81::obj-47::obj-17" : [ "live.numbox[5]", "live.numbox", 0 ],
 			"parameterbanks" : 			{
 
 			}
@@ -3557,8 +3584,8 @@
 			}
 , 			{
 				"name" : "lamlib-helper.coll",
-				"bootpath" : "~/Documents/Max 8/Packages/lam-lib/extras",
-				"patcherrelativepath" : "../../lam-lib/extras",
+				"bootpath" : "~/Documents/Max/Packages/lam-lib/extras",
+				"patcherrelativepath" : "../../../../Max/Packages/lam-lib/extras",
 				"type" : "TEXT",
 				"implicit" : 1
 			}

@@ -58,6 +58,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 578.0, 348.0, 150.0, 47.0 ],
+					"presentation_linecount" : 3,
 					"presentation_rect" : [ 578.0, 348.0, 150.0, 47.0 ],
 					"style" : "",
 					"text" : "this can be negative and will reverse the playing direction"
@@ -360,8 +361,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 4,
 					"outlettype" : [ "preset", "int", "preset", "int" ],
-					"patching_rect" : [ 1108.0, 58.0, 100.0, 40.0 ],
-					"presentation_rect" : [ 1108.0, 58.0, 100.0, 40.0 ],
+					"patching_rect" : [ 878.0, 72.0, 100.0, 40.0 ],
+					"presentation_rect" : [ 878.0, 72.0, 100.0, 40.0 ],
 					"preset_data" : [ 						{
 							"number" : 1,
 							"data" : [ 52, "obj-27", "matrixctrl", "list", 0, 0, 1, 0, 1, 0, 0, 2, 0, 0, 3, 0, 1, 0, 0, 1, 1, 0, 1, 2, 0, 1, 3, 0, 2, 0, 0, 2, 1, 0, 2, 2, 0, 2, 3, 0, 3, 0, 0, 3, 1, 0, 3, 2, 0, 3, 3, 0 ]
@@ -395,6 +396,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 1036.0, 27.0, 18.0, 100.0 ],
+					"presentation_linecount" : 7,
 					"presentation_rect" : [ 1036.0, 27.0, 18.0, 100.0 ],
 					"style" : "",
 					"text" : "DEGRADE"
@@ -409,6 +411,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 1017.0, 80.0, 18.0, 47.0 ],
+					"presentation_linecount" : 3,
 					"presentation_rect" : [ 1017.0, 80.0, 18.0, 47.0 ],
 					"style" : "",
 					"text" : "LPF"
@@ -423,6 +426,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 1000.0, 80.0, 18.0, 47.0 ],
+					"presentation_linecount" : 3,
 					"presentation_rect" : [ 1000.0, 80.0, 18.0, 47.0 ],
 					"style" : "",
 					"text" : "ENV"
@@ -437,6 +441,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 986.0, 53.0, 18.0, 74.0 ],
+					"presentation_linecount" : 5,
 					"presentation_rect" : [ 986.0, 53.0, 18.0, 74.0 ],
 					"style" : "",
 					"text" : "INPUT"
@@ -2442,6 +2447,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 1036.0, 195.5, 18.0, 100.0 ],
+					"presentation_linecount" : 7,
 					"presentation_rect" : [ 1036.0, 195.5, 18.0, 100.0 ],
 					"style" : "",
 					"text" : "DEGRADE"
@@ -2456,6 +2462,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 1017.0, 195.5, 18.0, 47.0 ],
+					"presentation_linecount" : 3,
 					"presentation_rect" : [ 1017.0, 195.5, 18.0, 47.0 ],
 					"style" : "",
 					"text" : "LPF"
@@ -2470,6 +2477,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 1000.0, 195.5, 18.0, 47.0 ],
+					"presentation_linecount" : 3,
 					"presentation_rect" : [ 1000.0, 195.5, 18.0, 47.0 ],
 					"style" : "",
 					"text" : "ENV"
@@ -2484,6 +2492,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 986.0, 195.5, 18.0, 87.0 ],
+					"presentation_linecount" : 6,
 					"presentation_rect" : [ 986.0, 195.5, 18.0, 87.0 ],
 					"style" : "",
 					"text" : "OUTPUT"
@@ -2605,6 +2614,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 7.5, 374.5, 112.0, 57.0 ],
+					"presentation_linecount" : 3,
 					"presentation_rect" : [ 7.5, 374.5, 112.0, 57.0 ],
 					"style" : "",
 					"text" : "Send to FX !\n(check out FX-library)"
@@ -3867,6 +3877,7 @@
 																	"numoutlets" : 1,
 																	"outlettype" : [ "" ],
 																	"patching_rect" : [ 19.0, 64.0, 183.0, 35.0 ],
+																	"presentation_linecount" : 2,
 																	"presentation_rect" : [ 19.0, 64.0, 183.0, 35.0 ],
 																	"style" : "",
 																	"text" : ";\rmax getsystem #0_getsystem"
@@ -5053,6 +5064,7 @@
 					"numinlets" : 5,
 					"numoutlets" : 0,
 					"patching_rect" : [ 453.0, 301.0, 390.5, 35.0 ],
+					"presentation_linecount" : 2,
 					"presentation_rect" : [ 453.0, 301.0, 390.5, 35.0 ],
 					"style" : "",
 					"text" : "LAM.sagrada.glissonplayer~ myContext @out env.in @buffer mySample1 @pitchbuffer pitchtable"
@@ -5569,17 +5581,17 @@
 					"orientation" : 1,
 					"outlettype" : [ "signal", "signal", "", "float", "list" ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 441.0, 598.5, 238.0, 38.0 ],
-					"presentation_rect" : [ 441.0, 598.5, 238.0, 38.0 ],
+					"patching_rect" : [ 441.0, 598.5, 238.0, 36.0 ],
+					"presentation_rect" : [ 441.0, 598.5, 238.0, 36.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_mmax" : 6.0,
+							"parameter_initial" : [ 0.0 ],
+							"parameter_shortname" : "live.gain~",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 4,
 							"parameter_mmin" : -70.0,
-							"parameter_longname" : "live.gain~[2]",
-							"parameter_mmax" : 6.0,
-							"parameter_initial" : [ 0.0 ],
-							"parameter_shortname" : "live.gain~"
+							"parameter_longname" : "live.gain~[2]"
 						}
 
 					}
@@ -7067,6 +7079,7 @@
 																					"numoutlets" : 1,
 																					"outlettype" : [ "" ],
 																					"patching_rect" : [ 19.0, 64.0, 183.0, 35.0 ],
+																					"presentation_linecount" : 2,
 																					"presentation_rect" : [ 19.0, 64.0, 183.0, 35.0 ],
 																					"style" : "",
 																					"text" : ";\rmax getsystem #0_getsystem"
@@ -8761,6 +8774,7 @@
 																					"numoutlets" : 1,
 																					"outlettype" : [ "" ],
 																					"patching_rect" : [ 19.0, 64.0, 183.0, 35.0 ],
+																					"presentation_linecount" : 2,
 																					"presentation_rect" : [ 19.0, 64.0, 183.0, 35.0 ],
 																					"style" : "",
 																					"text" : ";\rmax getsystem #0_getsystem"
@@ -11493,6 +11507,7 @@
 																					"numoutlets" : 1,
 																					"outlettype" : [ "" ],
 																					"patching_rect" : [ 19.0, 64.0, 183.0, 35.0 ],
+																					"presentation_linecount" : 2,
 																					"presentation_rect" : [ 19.0, 64.0, 183.0, 35.0 ],
 																					"style" : "",
 																					"text" : ";\rmax getsystem #0_getsystem"
@@ -13187,6 +13202,7 @@
 																					"numoutlets" : 1,
 																					"outlettype" : [ "" ],
 																					"patching_rect" : [ 19.0, 64.0, 183.0, 35.0 ],
+																					"presentation_linecount" : 2,
 																					"presentation_rect" : [ 19.0, 64.0, 183.0, 35.0 ],
 																					"style" : "",
 																					"text" : ";\rmax getsystem #0_getsystem"
@@ -19832,7 +19848,7 @@
 									"patching_rect" : [ 432.0, 99.0, 884.0, 60.0 ],
 									"presentation_rect" : [ 432.0, 99.0, 884.0, 60.0 ],
 									"setminmax" : [ 0.0, 1.0 ],
-									"size" : 13,
+									"size" : 128,
 									"spacing" : 1,
 									"style" : ""
 								}
@@ -20219,6 +20235,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 0,
 					"patching_rect" : [ 235.0, 436.0, 277.0, 35.0 ],
+					"presentation_linecount" : 2,
 					"presentation_rect" : [ 235.0, 436.0, 277.0, 35.0 ],
 					"style" : "",
 					"text" : "LAM.sagrada.envgain~ myContext @in env.in @out pan.in @buffer myEnveloppe @name env"
@@ -20777,6 +20794,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 25.0, 301.0, 366.000031, 35.0 ],
+					"presentation_linecount" : 2,
 					"presentation_rect" : [ 25.0, 301.0, 366.000031, 35.0 ],
 					"style" : "",
 					"text" : "LAM.sagrada.play~ myContext @out env.in @buffer mySample1 @name input"
@@ -22505,17 +22523,17 @@
 					"orientation" : 1,
 					"outlettype" : [ "signal", "signal", "", "float", "list" ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 25.0, 603.5, 238.0, 38.0 ],
-					"presentation_rect" : [ 25.0, 603.5, 238.0, 38.0 ],
+					"patching_rect" : [ 25.0, 603.5, 238.0, 36.0 ],
+					"presentation_rect" : [ 25.0, 603.5, 238.0, 36.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_mmax" : 6.0,
+							"parameter_initial" : [ 0.0 ],
+							"parameter_shortname" : "live.gain~",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 4,
 							"parameter_mmin" : -70.0,
-							"parameter_longname" : "live.gain~",
-							"parameter_mmax" : 6.0,
-							"parameter_initial" : [ 0.0 ],
-							"parameter_shortname" : "live.gain~"
+							"parameter_longname" : "live.gain~"
 						}
 
 					}
@@ -23067,8 +23085,8 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-80" : [ "live.gain~", "live.gain~", 0 ],
 			"obj-16" : [ "live.gain~[2]", "live.gain~", 0 ],
+			"obj-80" : [ "live.gain~", "live.gain~", 0 ],
 			"parameterbanks" : 			{
 
 			}
@@ -23389,8 +23407,8 @@
 			}
 , 			{
 				"name" : "pan2S.maxpat",
-				"bootpath" : "~/Documents/Max/Packages/lam-lib/patchers",
-				"patcherrelativepath" : "../../../../Max/Packages/lam-lib/patchers",
+				"bootpath" : "/Users/Shared/Max 8/Examples/spatialization/panning/lib",
+				"patcherrelativepath" : "../../../../../../Shared/Max 8/Examples/spatialization/panning/lib",
 				"type" : "JSON",
 				"implicit" : 1
 			}

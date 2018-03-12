@@ -2,9 +2,9 @@
 	"patcher" : 	{
 		"fileversion" : 1,
 		"appversion" : 		{
-			"major" : 7,
-			"minor" : 3,
-			"revision" : 5,
+			"major" : 8,
+			"minor" : 0,
+			"revision" : 0,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -38,36 +38,12 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
-					"id" : "obj-6",
-					"maxclass" : "newobj",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 257.0, 283.0, 58.0, 22.0 ],
-					"style" : "",
-					"text" : ">~ 0.001"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-5",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 257.0, 311.0, 199.0, 22.0 ],
-					"style" : "",
-					"text" : "LAM.sagrada.busy #1"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-1",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 30.700012, 311.0, 195.0, 22.0 ],
+					"presentation_rect" : [ 30.700012, 311.0, 195.0, 22.0 ],
 					"style" : "",
 					"text" : "LAM.sagrada.multiout~ #1"
 				}
@@ -81,6 +57,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 306.700012, 165.0, 72.0, 22.0 ],
+					"presentation_rect" : [ 306.700012, 165.0, 72.0, 22.0 ],
 					"style" : "",
 					"text" : "route buffer"
 				}
@@ -94,6 +71,7 @@
 					"numoutlets" : 4,
 					"outlettype" : [ "", "signal", "signal", "" ],
 					"patching_rect" : [ 30.700012, 88.0, 193.0, 22.0 ],
+					"presentation_rect" : [ 30.700012, 88.0, 193.0, 22.0 ],
 					"style" : "",
 					"text" : "LAM.sagrada.iosetter~ #1"
 				}
@@ -106,6 +84,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 229.200012, 32.0, 54.0, 20.0 ],
+					"presentation_rect" : [ 229.200012, 32.0, 54.0, 20.0 ],
 					"style" : "",
 					"text" : "duration"
 				}
@@ -119,6 +98,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 237.700012, 165.0, 57.0, 22.0 ],
+					"presentation_rect" : [ 237.700012, 165.0, 57.0, 22.0 ],
 					"style" : "",
 					"text" : "sah~ 0.5"
 				}
@@ -132,6 +112,11 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 237.700012, 54.0, 37.0, 22.0 ],
+					"presentation_rect" : [ 237.700012, 54.0, 37.0, 22.0 ],
+					"saved_object_attributes" : 					{
+						"attr_comment" : ""
+					}
+,
 					"style" : "",
 					"text" : "in~ 1"
 				}
@@ -145,6 +130,11 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 30.700012, 54.0, 30.0, 22.0 ],
+					"presentation_rect" : [ 30.700012, 54.0, 30.0, 22.0 ],
+					"saved_object_attributes" : 					{
+						"attr_comment" : ""
+					}
+,
 					"style" : "",
 					"text" : "in 1"
 				}
@@ -158,6 +148,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 306.700012, 200.0, 74.0, 22.0 ],
+					"presentation_rect" : [ 306.700012, 200.0, 74.0, 22.0 ],
 					"style" : "",
 					"text" : "prepend set"
 				}
@@ -171,6 +162,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 88.700012, 273.0, 77.0, 22.0 ],
+					"presentation_rect" : [ 88.700012, 273.0, 77.0, 22.0 ],
 					"style" : "",
 					"text" : "*~"
 				}
@@ -184,6 +176,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 146.700012, 238.0, 198.0, 22.0 ],
+					"presentation_rect" : [ 146.700012, 238.0, 198.0, 22.0 ],
 					"style" : "",
 					"text" : "wave~ #1.enveloppe"
 				}
@@ -197,6 +190,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 146.700012, 200.0, 136.0, 22.0 ],
+					"presentation_rect" : [ 146.700012, 200.0, 136.0, 22.0 ],
 					"style" : "",
 					"text" : "LAM.clickramp.bipolar~"
 				}
@@ -234,15 +228,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-2", 1 ],
-					"order" : 1,
-					"source" : [ "obj-22", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-6", 0 ],
-					"order" : 0,
 					"source" : [ "obj-22", 0 ]
 				}
 
@@ -252,13 +237,6 @@
 					"destination" : [ "obj-22", 0 ],
 					"midpoints" : [ 316.200012, 229.5, 156.200012, 229.5 ],
 					"source" : [ "obj-3", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-5", 0 ],
-					"source" : [ "obj-6", 0 ]
 				}
 
 			}

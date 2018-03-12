@@ -377,7 +377,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 59.0, 103.0, 735.0, 728.0 ],
+						"rect" : [ 59.0, 103.0, 635.0, 624.0 ],
 						"bgcolor" : [ 0.9, 0.91, 0.91, 1.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
@@ -407,26 +407,524 @@
 						"subpatcher_template" : "LAM.lib.HelpPatcher",
 						"boxes" : [ 							{
 								"box" : 								{
-									"id" : "obj-8",
+									"id" : "obj-25",
 									"maxclass" : "newobj",
-									"numinlets" : 1,
-									"numoutlets" : 1,
-									"outlettype" : [ "signal" ],
-									"patching_rect" : [ 53.0, 370.0, 268.0, 22.0 ],
-									"presentation_rect" : [ 53.0, 370.0, 268.0, 22.0 ],
+									"numinlets" : 0,
+									"numoutlets" : 4,
+									"outlettype" : [ "signal", "signal", "signal", "signal" ],
+									"patcher" : 									{
+										"fileversion" : 1,
+										"appversion" : 										{
+											"major" : 8,
+											"minor" : 0,
+											"revision" : 0,
+											"architecture" : "x64",
+											"modernui" : 1
+										}
+,
+										"rect" : [ 766.0, 248.0, 360.0, 260.0 ],
+										"bglocked" : 0,
+										"openinpresentation" : 0,
+										"default_fontsize" : 12.0,
+										"default_fontface" : 0,
+										"default_fontname" : "Arial",
+										"gridonopen" : 1,
+										"gridsize" : [ 15.0, 15.0 ],
+										"gridsnaponopen" : 1,
+										"objectsnaponopen" : 1,
+										"statusbarvisible" : 2,
+										"toolbarvisible" : 1,
+										"lefttoolbarpinned" : 0,
+										"toptoolbarpinned" : 0,
+										"righttoolbarpinned" : 0,
+										"bottomtoolbarpinned" : 0,
+										"toolbars_unpinned_last_save" : 0,
+										"tallnewobj" : 0,
+										"boxanimatetime" : 200,
+										"enablehscroll" : 1,
+										"enablevscroll" : 1,
+										"devicewidth" : 0.0,
+										"description" : "",
+										"digest" : "",
+										"tags" : "",
+										"style" : "",
+										"subpatcher_template" : "",
+										"boxes" : [ 											{
+												"box" : 												{
+													"id" : "obj-88",
+													"maxclass" : "newobj",
+													"numinlets" : 1,
+													"numoutlets" : 1,
+													"outlettype" : [ "signal" ],
+													"patching_rect" : [ 125.0, 127.0, 58.0, 22.0 ],
+													"presentation_rect" : [ 125.0, 127.0, 58.0, 22.0 ],
+													"style" : "",
+													"text" : "sig~ 0.99"
+												}
+
+											}
+, 											{
+												"box" : 												{
+													"format" : 6,
+													"id" : "obj-11",
+													"maxclass" : "flonum",
+													"maximum" : 1.0,
+													"minimum" : 0.0,
+													"numinlets" : 1,
+													"numoutlets" : 2,
+													"outlettype" : [ "", "bang" ],
+													"parameter_enable" : 0,
+													"patching_rect" : [ 275.0, 100.0, 50.0, 22.0 ],
+													"presentation_rect" : [ 275.0, 100.0, 50.0, 22.0 ],
+													"style" : ""
+												}
+
+											}
+, 											{
+												"box" : 												{
+													"id" : "obj-77",
+													"maxclass" : "newobj",
+													"numinlets" : 1,
+													"numoutlets" : 1,
+													"outlettype" : [ "signal" ],
+													"patching_rect" : [ 275.0, 127.0, 53.0, 22.0 ],
+													"presentation_rect" : [ 275.0, 127.0, 53.0, 22.0 ],
+													"style" : "",
+													"text" : "sig~ 0.5"
+												}
+
+											}
+, 											{
+												"box" : 												{
+													"format" : 6,
+													"id" : "obj-57",
+													"maxclass" : "flonum",
+													"maximum" : 1.0,
+													"minimum" : 0.0,
+													"numinlets" : 1,
+													"numoutlets" : 2,
+													"outlettype" : [ "", "bang" ],
+													"parameter_enable" : 0,
+													"patching_rect" : [ 200.0, 100.0, 50.0, 22.0 ],
+													"presentation_rect" : [ 200.0, 100.0, 50.0, 22.0 ],
+													"style" : ""
+												}
+
+											}
+, 											{
+												"box" : 												{
+													"id" : "obj-58",
+													"maxclass" : "newobj",
+													"numinlets" : 1,
+													"numoutlets" : 1,
+													"outlettype" : [ "signal" ],
+													"patching_rect" : [ 200.0, 127.0, 43.0, 22.0 ],
+													"presentation_rect" : [ 200.0, 127.0, 43.0, 22.0 ],
+													"style" : "",
+													"text" : "sig~ 1"
+												}
+
+											}
+, 											{
+												"box" : 												{
+													"format" : 6,
+													"id" : "obj-56",
+													"maxclass" : "flonum",
+													"maximum" : 1.0,
+													"minimum" : 0.0,
+													"numinlets" : 1,
+													"numoutlets" : 2,
+													"outlettype" : [ "", "bang" ],
+													"parameter_enable" : 0,
+													"patching_rect" : [ 125.0, 100.0, 50.0, 22.0 ],
+													"presentation_rect" : [ 125.0, 100.0, 50.0, 22.0 ],
+													"style" : ""
+												}
+
+											}
+, 											{
+												"box" : 												{
+													"id" : "obj-52",
+													"maxclass" : "newobj",
+													"numinlets" : 0,
+													"numoutlets" : 1,
+													"outlettype" : [ "signal" ],
+													"patcher" : 													{
+														"fileversion" : 1,
+														"appversion" : 														{
+															"major" : 8,
+															"minor" : 0,
+															"revision" : 0,
+															"architecture" : "x64",
+															"modernui" : 1
+														}
+,
+														"rect" : [ 34.0, 300.0, 640.0, 480.0 ],
+														"bgcolor" : [ 0.9, 0.91, 0.91, 1.0 ],
+														"bglocked" : 0,
+														"openinpresentation" : 0,
+														"default_fontsize" : 12.0,
+														"default_fontface" : 0,
+														"default_fontname" : "Arial",
+														"gridonopen" : 1,
+														"gridsize" : [ 15.0, 15.0 ],
+														"gridsnaponopen" : 1,
+														"objectsnaponopen" : 1,
+														"statusbarvisible" : 2,
+														"toolbarvisible" : 1,
+														"lefttoolbarpinned" : 0,
+														"toptoolbarpinned" : 0,
+														"righttoolbarpinned" : 0,
+														"bottomtoolbarpinned" : 0,
+														"toolbars_unpinned_last_save" : 0,
+														"tallnewobj" : 0,
+														"boxanimatetime" : 200,
+														"enablehscroll" : 1,
+														"enablevscroll" : 1,
+														"devicewidth" : 0.0,
+														"description" : "",
+														"digest" : "",
+														"tags" : "",
+														"style" : "",
+														"subpatcher_template" : "LAM.lib.HelpPatcher",
+														"boxes" : [ 															{
+																"box" : 																{
+																	"format" : 6,
+																	"id" : "obj-7",
+																	"maxclass" : "flonum",
+																	"numinlets" : 1,
+																	"numoutlets" : 2,
+																	"outlettype" : [ "", "bang" ],
+																	"parameter_enable" : 0,
+																	"patching_rect" : [ 121.0, 184.0, 50.0, 22.0 ],
+																	"presentation_rect" : [ 121.0, 184.0, 50.0, 22.0 ],
+																	"style" : ""
+																}
+
+															}
+, 															{
+																"box" : 																{
+																	"id" : "obj-3",
+																	"maxclass" : "newobj",
+																	"numinlets" : 1,
+																	"numoutlets" : 1,
+																	"outlettype" : [ "signal" ],
+																	"patching_rect" : [ 50.0, 183.0, 35.0, 22.0 ],
+																	"presentation_rect" : [ 50.0, 183.0, 35.0, 22.0 ],
+																	"style" : "",
+																	"text" : "abs~"
+																}
+
+															}
+, 															{
+																"box" : 																{
+																	"id" : "obj-6",
+																	"maxclass" : "newobj",
+																	"numinlets" : 2,
+																	"numoutlets" : 1,
+																	"outlettype" : [ "signal" ],
+																	"patching_rect" : [ 50.0, 225.0, 40.0, 22.0 ],
+																	"presentation_rect" : [ 50.0, 225.0, 40.0, 22.0 ],
+																	"style" : "",
+																	"text" : "*~ 0.1"
+																}
+
+															}
+, 															{
+																"box" : 																{
+																	"id" : "obj-2",
+																	"maxclass" : "newobj",
+																	"numinlets" : 1,
+																	"numoutlets" : 1,
+																	"outlettype" : [ "signal" ],
+																	"patching_rect" : [ 50.0, 128.0, 46.0, 22.0 ],
+																	"presentation_rect" : [ 50.0, 128.0, 46.0, 22.0 ],
+																	"style" : "",
+																	"text" : "noise~"
+																}
+
+															}
+, 															{
+																"box" : 																{
+																	"comment" : "",
+																	"id" : "obj-50",
+																	"index" : 1,
+																	"maxclass" : "outlet",
+																	"numinlets" : 1,
+																	"numoutlets" : 0,
+																	"patching_rect" : [ 50.0, 257.0, 30.0, 30.0 ],
+																	"presentation_rect" : [ 50.0, 257.0, 30.0, 30.0 ],
+																	"style" : ""
+																}
+
+															}
+ ],
+														"lines" : [ 															{
+																"patchline" : 																{
+																	"destination" : [ "obj-3", 0 ],
+																	"source" : [ "obj-2", 0 ]
+																}
+
+															}
+, 															{
+																"patchline" : 																{
+																	"destination" : [ "obj-6", 0 ],
+																	"source" : [ "obj-3", 0 ]
+																}
+
+															}
+, 															{
+																"patchline" : 																{
+																	"destination" : [ "obj-50", 0 ],
+																	"source" : [ "obj-6", 0 ]
+																}
+
+															}
+, 															{
+																"patchline" : 																{
+																	"destination" : [ "obj-6", 1 ],
+																	"source" : [ "obj-7", 0 ]
+																}
+
+															}
+ ]
+													}
+,
+													"patching_rect" : [ 50.0, 127.0, 43.0, 22.0 ],
+													"presentation_rect" : [ 50.0, 127.0, 43.0, 22.0 ],
+													"saved_object_attributes" : 													{
+														"description" : "",
+														"digest" : "",
+														"globalpatchername" : "",
+														"style" : "",
+														"tags" : ""
+													}
+,
+													"style" : "",
+													"text" : "p"
+												}
+
+											}
+, 											{
+												"box" : 												{
+													"comment" : "",
+													"id" : "obj-15",
+													"index" : 1,
+													"maxclass" : "outlet",
+													"numinlets" : 1,
+													"numoutlets" : 0,
+													"patching_rect" : [ 50.0, 209.0, 30.0, 30.0 ],
+													"presentation_rect" : [ 50.0, 209.0, 30.0, 30.0 ],
+													"style" : ""
+												}
+
+											}
+, 											{
+												"box" : 												{
+													"comment" : "",
+													"id" : "obj-21",
+													"index" : 2,
+													"maxclass" : "outlet",
+													"numinlets" : 1,
+													"numoutlets" : 0,
+													"patching_rect" : [ 125.0, 209.0, 30.0, 30.0 ],
+													"presentation_rect" : [ 125.0, 209.0, 30.0, 30.0 ],
+													"style" : ""
+												}
+
+											}
+, 											{
+												"box" : 												{
+													"comment" : "",
+													"id" : "obj-22",
+													"index" : 3,
+													"maxclass" : "outlet",
+													"numinlets" : 1,
+													"numoutlets" : 0,
+													"patching_rect" : [ 200.0, 209.0, 30.0, 30.0 ],
+													"presentation_rect" : [ 200.0, 209.0, 30.0, 30.0 ],
+													"style" : ""
+												}
+
+											}
+, 											{
+												"box" : 												{
+													"comment" : "",
+													"id" : "obj-24",
+													"index" : 4,
+													"maxclass" : "outlet",
+													"numinlets" : 1,
+													"numoutlets" : 0,
+													"patching_rect" : [ 275.0, 209.0, 30.0, 30.0 ],
+													"presentation_rect" : [ 275.0, 209.0, 30.0, 30.0 ],
+													"style" : ""
+												}
+
+											}
+ ],
+										"lines" : [ 											{
+												"patchline" : 												{
+													"destination" : [ "obj-77", 0 ],
+													"source" : [ "obj-11", 0 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"destination" : [ "obj-15", 0 ],
+													"source" : [ "obj-52", 0 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"destination" : [ "obj-88", 0 ],
+													"source" : [ "obj-56", 0 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"destination" : [ "obj-58", 0 ],
+													"source" : [ "obj-57", 0 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"destination" : [ "obj-22", 0 ],
+													"source" : [ "obj-58", 0 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"destination" : [ "obj-24", 0 ],
+													"source" : [ "obj-77", 0 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"destination" : [ "obj-21", 0 ],
+													"source" : [ "obj-88", 0 ]
+												}
+
+											}
+ ]
+									}
+,
+									"patching_rect" : [ 104.9375, 281.0, 278.0, 22.0 ],
+									"presentation_rect" : [ 104.9375, 281.0, 278.0, 22.0 ],
+									"saved_object_attributes" : 									{
+										"description" : "",
+										"digest" : "",
+										"globalpatchername" : "",
+										"style" : "",
+										"tags" : ""
+									}
+,
 									"style" : "",
-									"text" : "LAM.sagrada.out~ /myBusyContext @in sine-out"
+									"text" : "p controls"
 								}
 
 							}
 , 							{
 								"box" : 								{
-									"id" : "obj-5",
+									"id" : "obj-10",
+									"linecount" : 2,
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 446.0, 386.0, 150.0, 33.0 ],
+									"presentation_linecount" : 2,
+									"presentation_rect" : [ 446.0, 386.0, 150.0, 33.0 ],
+									"style" : "",
+									"text" : "mute either on sine-synth tail or on (longer) delay tail"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-19",
+									"items" : [ "sine-out", ",", "delay-out" ],
+									"maxclass" : "umenu",
+									"numinlets" : 1,
+									"numoutlets" : 3,
+									"outlettype" : [ "int", "", "" ],
+									"parameter_enable" : 0,
+									"patching_rect" : [ 337.0, 386.0, 100.0, 22.0 ],
+									"presentation_rect" : [ 337.0, 386.0, 100.0, 22.0 ],
+									"style" : ""
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-20",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 337.0, 415.0, 65.0, 22.0 ],
+									"presentation_rect" : [ 337.0, 415.0, 65.0, 22.0 ],
+									"style" : "",
+									"text" : "prepend in"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"color" : [ 0.702269, 0.811747, 0.303388, 1.0 ],
+									"id" : "obj-18",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 337.0, 448.0, 277.0, 22.0 ],
+									"presentation_rect" : [ 337.0, 448.0, 277.0, 22.0 ],
+									"style" : "",
+									"text" : "LAM.sagrada.busy~ /myBusyContext @in sine-out"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-16",
+									"items" : [ "sine-out", ",", "delay-out" ],
+									"maxclass" : "umenu",
+									"numinlets" : 1,
+									"numoutlets" : 3,
+									"outlettype" : [ "int", "", "" ],
+									"parameter_enable" : 0,
+									"patching_rect" : [ 25.5, 393.0, 100.0, 22.0 ],
+									"presentation_rect" : [ 25.5, 393.0, 100.0, 22.0 ],
+									"style" : ""
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-17",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 21.5, 422.0, 65.0, 22.0 ],
+									"presentation_rect" : [ 21.5, 422.0, 65.0, 22.0 ],
+									"style" : "",
+									"text" : "prepend in"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"color" : [ 0.702269, 0.811747, 0.303388, 1.0 ],
+									"id" : "obj-53",
 									"maxclass" : "newobj",
 									"numinlets" : 5,
 									"numoutlets" : 0,
-									"patching_rect" : [ 53.0, 308.0, 365.0, 22.0 ],
-									"presentation_rect" : [ 53.0, 308.0, 365.0, 22.0 ],
+									"patching_rect" : [ 17.9375, 311.0, 365.0, 22.0 ],
+									"presentation_rect" : [ 17.9375, 311.0, 365.0, 22.0 ],
 									"style" : "",
 									"text" : "LAM.sagrada.delay~ /myBusyContext @in sine-out @out delay-out"
 								}
@@ -434,16 +932,16 @@
 							}
 , 							{
 								"box" : 								{
-									"fontname" : "Arial",
-									"fontsize" : 12.0,
-									"id" : "obj-3",
-									"maxclass" : "comment",
+									"color" : [ 0.702269, 0.811747, 0.303388, 1.0 ],
+									"id" : "obj-8",
+									"maxclass" : "newobj",
 									"numinlets" : 1,
-									"numoutlets" : 0,
-									"patching_rect" : [ 53.0, 83.060059, 495.0, 20.0 ],
-									"presentation_rect" : [ 53.0, 83.060059, 495.0, 20.0 ],
+									"numoutlets" : 1,
+									"outlettype" : [ "signal" ],
+									"patching_rect" : [ 21.5, 447.0, 275.0, 22.0 ],
+									"presentation_rect" : [ 21.5, 447.0, 275.0, 22.0 ],
 									"style" : "",
-									"text" : "LAM.sagrada.busy~ "
+									"text" : "LAM.sagrada.out~ /myBusyContext @in delay-out"
 								}
 
 							}
@@ -454,8 +952,8 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 80.0, 439.0, 83.0, 22.0 ],
-									"presentation_rect" : [ 80.0, 439.0, 83.0, 22.0 ],
+									"patching_rect" : [ 48.5, 503.0, 83.0, 22.0 ],
+									"presentation_rect" : [ 48.5, 503.0, 83.0, 22.0 ],
 									"style" : "",
 									"text" : "loadmess -12"
 								}
@@ -477,7 +975,7 @@
 											"modernui" : 1
 										}
 ,
-										"rect" : [ 450.0, 306.0, 805.0, 480.0 ],
+										"rect" : [ 601.0, 227.0, 805.0, 480.0 ],
 										"bgcolor" : [ 0.9, 0.91, 0.91, 1.0 ],
 										"bglocked" : 0,
 										"openinpresentation" : 0,
@@ -513,6 +1011,7 @@
 													"numinlets" : 1,
 													"numoutlets" : 0,
 													"patching_rect" : [ 50.0, 19.0, 678.0, 60.0 ],
+													"presentation_linecount" : 4,
 													"presentation_rect" : [ 50.0, 19.0, 678.0, 60.0 ],
 													"style" : "",
 													"text" : "The LAM.sagrada.busy abstraction in the poly~ module write busy value in the busy-buffer according to the next voice value. \n\nOn the other end, the busy-buffer is read by the trigger clock inside LAM.sagrada.trigger. \nFor each voice, it says how many steps should be jump to find a free voice."
@@ -575,8 +1074,9 @@
 													"numinlets" : 2,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 50.0, 131.0, 148.0, 35.0 ],
-													"presentation_rect" : [ 50.0, 131.0, 148.0, 35.0 ],
+													"patching_rect" : [ 50.0, 131.0, 150.0, 35.0 ],
+													"presentation_linecount" : 2,
+													"presentation_rect" : [ 50.0, 131.0, 150.0, 35.0 ],
 													"style" : "",
 													"text" : "set /myBusyContext/busy, voffset 1, vzoom 10"
 												}
@@ -630,8 +1130,8 @@
  ]
 									}
 ,
-									"patching_rect" : [ 575.0, 356.0, 55.0, 22.0 ],
-									"presentation_rect" : [ 575.0, 356.0, 55.0, 22.0 ],
+									"patching_rect" : [ 469.0, 289.0, 55.0, 22.0 ],
+									"presentation_rect" : [ 469.0, 289.0, 55.0, 22.0 ],
 									"saved_object_attributes" : 									{
 										"description" : "",
 										"digest" : "",
@@ -647,19 +1147,6 @@
 							}
 , 							{
 								"box" : 								{
-									"id" : "obj-9",
-									"maxclass" : "comment",
-									"numinlets" : 1,
-									"numoutlets" : 0,
-									"patching_rect" : [ 302.875, 468.0, 79.0, 20.0 ],
-									"presentation_rect" : [ 302.875, 468.0, 79.0, 20.0 ],
-									"style" : "",
-									"text" : "current voice"
-								}
-
-							}
-, 							{
-								"box" : 								{
 									"channels" : 1,
 									"id" : "obj-4",
 									"maxclass" : "live.gain~",
@@ -668,17 +1155,17 @@
 									"orientation" : 1,
 									"outlettype" : [ "signal", "", "float", "list" ],
 									"parameter_enable" : 1,
-									"patching_rect" : [ 53.0, 466.0, 138.0, 21.0 ],
-									"presentation_rect" : [ 53.0, 466.0, 138.0, 21.0 ],
+									"patching_rect" : [ 21.5, 530.0, 138.0, 20.0 ],
+									"presentation_rect" : [ 21.5, 530.0, 138.0, 20.0 ],
 									"saved_attribute_attributes" : 									{
 										"valueof" : 										{
+											"parameter_shortname" : "live.gain~",
 											"parameter_type" : 0,
 											"parameter_unitstyle" : 4,
 											"parameter_mmin" : -70.0,
 											"parameter_longname" : "live.gain~",
 											"parameter_mmax" : 6.0,
-											"parameter_initial" : [ 0.0 ],
-											"parameter_shortname" : "live.gain~"
+											"parameter_initial" : [ 0.0 ]
 										}
 
 									}
@@ -691,44 +1178,13 @@
 							}
 , 							{
 								"box" : 								{
-									"fontface" : 0,
-									"fontname" : "Arial",
-									"fontsize" : 12.0,
-									"id" : "obj-29",
-									"maxclass" : "number~",
-									"mode" : 2,
-									"numinlets" : 2,
-									"numoutlets" : 2,
-									"outlettype" : [ "signal", "float" ],
-									"patching_rect" : [ 241.0, 468.0, 56.0, 22.0 ],
-									"presentation_rect" : [ 241.0, 468.0, 56.0, 22.0 ],
-									"sig" : 0.0,
-									"style" : ""
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-28",
-									"maxclass" : "newobj",
-									"numinlets" : 2,
-									"numoutlets" : 1,
-									"outlettype" : [ "signal" ],
-									"patching_rect" : [ 241.0, 439.0, 57.0, 22.0 ],
-									"presentation_rect" : [ 241.0, 439.0, 57.0, 22.0 ],
-									"style" : "",
-									"text" : "sah~ 0.5"
-								}
-
-							}
-, 							{
-								"box" : 								{
+									"color" : [ 0.702269, 0.811747, 0.303388, 1.0 ],
 									"id" : "obj-23",
 									"maxclass" : "newobj",
 									"numinlets" : 2,
 									"numoutlets" : 0,
-									"patching_rect" : [ 53.0, 255.0, 313.0, 22.0 ],
-									"presentation_rect" : [ 53.0, 255.0, 313.0, 22.0 ],
+									"patching_rect" : [ 19.0, 241.0, 313.0, 22.0 ],
+									"presentation_rect" : [ 19.0, 241.0, 313.0, 22.0 ],
 									"style" : "",
 									"text" : "LAM.sagrada.decaysine~ /myBusyContext @out sine-out"
 								}
@@ -740,8 +1196,8 @@
 									"maxclass" : "ezdac~",
 									"numinlets" : 2,
 									"numoutlets" : 0,
-									"patching_rect" : [ 53.0, 495.0, 45.0, 45.0 ],
-									"presentation_rect" : [ 53.0, 495.0, 45.0, 45.0 ],
+									"patching_rect" : [ 21.5, 559.0, 45.0, 45.0 ],
+									"presentation_rect" : [ 21.5, 559.0, 45.0, 45.0 ],
 									"style" : ""
 								}
 
@@ -754,8 +1210,8 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 235.0, 154.0, 85.875, 24.0 ],
-									"presentation_rect" : [ 235.0, 154.0, 85.875, 24.0 ],
+									"patching_rect" : [ 201.0, 140.0, 85.875, 24.0 ],
+									"presentation_rect" : [ 201.0, 140.0, 85.875, 24.0 ],
 									"style" : "",
 									"text" : "one grain"
 								}
@@ -768,8 +1224,8 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 422.0, 155.0, 117.875, 24.0 ],
-									"presentation_rect" : [ 422.0, 155.0, 117.875, 24.0 ],
+									"patching_rect" : [ 388.0, 141.0, 117.875, 24.0 ],
+									"presentation_rect" : [ 388.0, 141.0, 117.875, 24.0 ],
 									"style" : "",
 									"text" : "grain frequency"
 								}
@@ -943,8 +1399,8 @@
  ]
 									}
 ,
-									"patching_rect" : [ 371.0, 183.0, 83.0, 22.0 ],
-									"presentation_rect" : [ 371.0, 183.0, 83.0, 22.0 ],
+									"patching_rect" : [ 337.0, 169.0, 83.0, 22.0 ],
+									"presentation_rect" : [ 337.0, 169.0, 83.0, 22.0 ],
 									"saved_object_attributes" : 									{
 										"description" : "",
 										"digest" : "",
@@ -968,8 +1424,8 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "", "bang" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 371.0, 155.0, 50.0, 22.0 ],
-									"presentation_rect" : [ 371.0, 155.0, 50.0, 22.0 ],
+									"patching_rect" : [ 337.0, 141.0, 50.0, 22.0 ],
+									"presentation_rect" : [ 337.0, 141.0, 50.0, 22.0 ],
 									"style" : ""
 								}
 
@@ -981,8 +1437,8 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "bang" ],
-									"patching_rect" : [ 320.0, 154.0, 24.0, 24.0 ],
-									"presentation_rect" : [ 320.0, 154.0, 24.0, 24.0 ],
+									"patching_rect" : [ 286.0, 140.0, 24.0, 24.0 ],
+									"presentation_rect" : [ 286.0, 140.0, 24.0, 24.0 ],
 									"style" : ""
 								}
 
@@ -994,8 +1450,8 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "signal" ],
-									"patching_rect" : [ 320.0, 183.0, 41.0, 22.0 ],
-									"presentation_rect" : [ 320.0, 183.0, 41.0, 22.0 ],
+									"patching_rect" : [ 286.0, 169.0, 41.0, 22.0 ],
+									"presentation_rect" : [ 286.0, 169.0, 41.0, 22.0 ],
 									"style" : "",
 									"text" : "click~"
 								}
@@ -1003,14 +1459,15 @@
 							}
 , 							{
 								"box" : 								{
+									"color" : [ 0.702269, 0.811747, 0.303388, 1.0 ],
 									"id" : "obj-78",
 									"maxclass" : "newobj",
 									"numinlets" : 2,
 									"numoutlets" : 0,
-									"patching_rect" : [ 53.0, 222.0, 285.0, 22.0 ],
-									"presentation_rect" : [ 53.0, 222.0, 285.0, 22.0 ],
+									"patching_rect" : [ 19.0, 208.0, 285.0, 22.0 ],
+									"presentation_rect" : [ 19.0, 208.0, 285.0, 22.0 ],
 									"style" : "",
-									"text" : "LAM.sagrada.trigger~ 16 /myBusyContext @steal 0"
+									"text" : "LAM.sagrada.trigger~ 8 /myBusyContext @steal 0"
 								}
 
 							}
@@ -1019,14 +1476,15 @@
 									"fontname" : "Arial",
 									"fontsize" : 12.0,
 									"id" : "obj-2",
-									"linecount" : 3,
+									"linecount" : 5,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 53.0, 28.060059, 495.0, 47.0 ],
-									"presentation_rect" : [ 53.0, 28.060059, 495.0, 47.0 ],
+									"patching_rect" : [ 19.0, 22.060059, 495.0, 74.0 ],
+									"presentation_linecount" : 5,
+									"presentation_rect" : [ 19.0, 22.060059, 495.0, 74.0 ],
 									"style" : "",
-									"text" : "Busy voice mechanism at audio rate enabling non-stealing mode.\nHere, the clock is sent sequentially to the next non-busy voice.\nIt requires the LAM.sagrada.busy~ object to be used in the synth patcher (see inside poly~)"
+									"text" : "Busy voice mechanism at audio rate enabling non-stealing mode.\nHere, the clock is sent sequentially to the next non-busy voice.\nIt requires the LAM.sagrada.busy~ object to be used somewhere in the patch. Note than one can choose which output to scan to delare a voice non-busy anymore, which proves to be useful for FX adding extra tails, like reverbs and delays."
 								}
 
 							}
@@ -1038,8 +1496,8 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "int" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 53.0, 154.0, 24.0, 24.0 ],
-									"presentation_rect" : [ 53.0, 154.0, 24.0, 24.0 ],
+									"patching_rect" : [ 19.0, 140.0, 24.0, 24.0 ],
+									"presentation_rect" : [ 19.0, 140.0, 24.0, 24.0 ],
 									"style" : ""
 								}
 
@@ -1051,8 +1509,8 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 53.0, 185.0, 53.0, 22.0 ],
-									"presentation_rect" : [ 53.0, 185.0, 53.0, 22.0 ],
+									"patching_rect" : [ 19.0, 171.0, 53.0, 22.0 ],
+									"presentation_rect" : [ 19.0, 171.0, 53.0, 22.0 ],
 									"style" : "",
 									"text" : "steal $1"
 								}
@@ -1075,8 +1533,57 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-29", 0 ],
-									"source" : [ "obj-28", 0 ]
+									"destination" : [ "obj-17", 0 ],
+									"source" : [ "obj-16", 1 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-8", 0 ],
+									"source" : [ "obj-17", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-20", 0 ],
+									"source" : [ "obj-19", 1 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-18", 0 ],
+									"source" : [ "obj-20", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-53", 4 ],
+									"source" : [ "obj-25", 3 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-53", 3 ],
+									"source" : [ "obj-25", 2 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-53", 2 ],
+									"source" : [ "obj-25", 1 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-53", 1 ],
+									"source" : [ "obj-25", 0 ]
 								}
 
 							}
@@ -1928,6 +2435,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 277.5, 208.0, 281.0, 33.0 ],
+					"presentation_linecount" : 2,
 					"presentation_rect" : [ 277.5, 208.0, 281.0, 33.0 ],
 					"style" : "",
 					"text" : "arguments : nb of voices (default 1), context name\nattributes : steal (default 0)"
@@ -2338,8 +2846,8 @@
 			}
 , 			{
 				"name" : "lamlib-helper.coll",
-				"bootpath" : "~/Documents/Max 8/Packages/lam-lib/extras",
-				"patcherrelativepath" : "../../lam-lib/extras",
+				"bootpath" : "~/Documents/Max/Packages/lam-lib/extras",
+				"patcherrelativepath" : "../../../../Max/Packages/lam-lib/extras",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
@@ -2414,6 +2922,20 @@
 				"implicit" : 1
 			}
 , 			{
+				"name" : "LAM.sagrada.out~.maxpat",
+				"bootpath" : "~/Documents/Max 8/Packages/Sagrada/patchers",
+				"patcherrelativepath" : "../patchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "LAM.sagrada.out~.p.maxpat",
+				"bootpath" : "~/Documents/Max 8/Packages/Sagrada/patchers",
+				"patcherrelativepath" : "../patchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "LAM.sagrada.delay~.maxpat",
 				"bootpath" : "~/Documents/Max 8/Packages/Sagrada/patchers",
 				"patcherrelativepath" : "../patchers",
@@ -2428,14 +2950,21 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "LAM.sagrada.out~.maxpat",
+				"name" : "LAM.sagrada.busy~.maxpat",
 				"bootpath" : "~/Documents/Max 8/Packages/Sagrada/patchers",
 				"patcherrelativepath" : "../patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "LAM.sagrada.out~.p.maxpat",
+				"name" : "LAM.sagrada.busy~.p.maxpat",
+				"bootpath" : "~/Documents/Max 8/Packages/Sagrada/patchers",
+				"patcherrelativepath" : "../patchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "LAM.sagrada.busy.maxpat",
 				"bootpath" : "~/Documents/Max 8/Packages/Sagrada/patchers",
 				"patcherrelativepath" : "../patchers",
 				"type" : "JSON",
