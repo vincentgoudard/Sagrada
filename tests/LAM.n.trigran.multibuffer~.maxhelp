@@ -36,7 +36,7 @@
 		"digest" : "",
 		"tags" : "",
 		"style" : "",
-		"subpatcher_template" : "LAM.lib.HelpPatcher",
+		"subpatcher_template" : "sagrada.lib.HelpPatcher",
 		"boxes" : [ 			{
 				"box" : 				{
 					"id" : "obj-53",
@@ -107,7 +107,7 @@
 						"digest" : "",
 						"tags" : "",
 						"style" : "",
-						"subpatcher_template" : "LAM.lib.HelpPatcher",
+						"subpatcher_template" : "sagrada.lib.HelpPatcher",
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-15",
@@ -347,7 +347,7 @@
 						"digest" : "",
 						"tags" : "",
 						"style" : "",
-						"subpatcher_template" : "LAM.lib.HelpPatcher",
+						"subpatcher_template" : "sagrada.lib.HelpPatcher",
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-27",
@@ -889,7 +889,7 @@
 					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 177.700012, 273.0, 201.0, 22.0 ],
 					"style" : "",
-					"text" : "poly~ LAM.n.trigran.multibuffer~.p 2"
+					"text" : "poly~ sagrada.n.trigran.multibuffer~.p 2"
 				}
 
 			}
@@ -915,13 +915,13 @@
 					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 177.700012, 228.0, 110.0, 22.0 ],
 					"style" : "",
-					"text" : "LAM.clickramp~"
+					"text" : "sagrada.clickramp~"
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"args" : [ "@obj-name", "LAM.n.trigran.multibuffer~", "@obj-desc", "Sample accurate buffer selection." ],
+					"args" : [ "@obj-name", "sagrada.n.trigran.multibuffer~", "@obj-desc", "Sample accurate buffer selection." ],
 					"bgmode" : 0,
 					"border" : 0,
 					"clickthrough" : 0,
@@ -930,7 +930,7 @@
 					"id" : "obj-5",
 					"lockeddragscroll" : 0,
 					"maxclass" : "bpatcher",
-					"name" : "LAM.helpheader.maxpat",
+					"name" : "sagrada.helpheader.maxpat",
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"offset" : [ 0.0, 0.0 ],
@@ -1074,7 +1074,7 @@
 			}
  ],
 		"dependency_cache" : [ 			{
-				"name" : "LAM.helpheader.maxpat",
+				"name" : "sagrada.helpheader.maxpat",
 				"bootpath" : "~/Documents/Max/Packages/lam-lib/patchers",
 				"type" : "JSON",
 				"implicit" : 1
@@ -1086,13 +1086,13 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "LAM.clickramp~.maxpat",
+				"name" : "sagrada.clickramp~.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/Sagrada/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "LAM.n.trigran.multibuffer~.p.maxpat",
+				"name" : "sagrada.n.trigran.multibuffer~.p.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/Sagrada/patchers",
 				"type" : "JSON",
 				"implicit" : 1

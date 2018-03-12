@@ -176,7 +176,7 @@
 					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 146.700012, 144.0, 96.0, 22.0 ],
 					"style" : "",
-					"text" : "LAM.clickramp~"
+					"text" : "sagrada.clickramp~"
 				}
 
 			}

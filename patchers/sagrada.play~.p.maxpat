@@ -348,7 +348,7 @@
 					"patching_rect" : [ 176.0, 200.0, 136.0, 22.0 ],
 					"presentation_rect" : [ 176.0, 200.0, 136.0, 22.0 ],
 					"style" : "",
-					"text" : "LAM.clickramp.bipolar~"
+					"text" : "sagrada.clickramp.bipolar~"
 				}
 
 			}

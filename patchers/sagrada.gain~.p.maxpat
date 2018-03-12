@@ -2,10 +2,10 @@
 	"patcher" : 	{
 		"fileversion" : 1,
 		"appversion" : 		{
-			"major" : 7,
-			"minor" : 3,
-			"revision" : 4,
-			"architecture" : "x86",
+			"major" : 8,
+			"minor" : 0,
+			"revision" : 0,
+			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
@@ -38,14 +38,29 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-4",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 239.0, 206.0, 54.0, 20.0 ],
+					"presentation_linecount" : 2,
+					"presentation_rect" : [ 239.0, 206.0, 54.0, 20.0 ],
+					"style" : "",
+					"text" : "DCblock"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-2",
 					"maxclass" : "newobj",
-					"numinlets" : 1,
+					"numinlets" : 6,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 87.0, 206.0, 91.0, 22.0 ],
+					"patching_rect" : [ 87.0, 206.0, 150.0, 22.0 ],
+					"presentation_rect" : [ 87.0, 206.0, 150.0, 22.0 ],
 					"style" : "",
-					"text" : "LAM.DCblock~"
+					"text" : "biquad~ 1 -1 0 -0.99997 0."
 				}
 
 			}
@@ -57,6 +72,7 @@
 					"numoutlets" : 4,
 					"outlettype" : [ "", "signal", "signal", "" ],
 					"patching_rect" : [ 29.0, 97.0, 192.0, 22.0 ],
+					"presentation_rect" : [ 29.0, 97.0, 192.0, 22.0 ],
 					"style" : "",
 					"text" : "sagrada.iosetter~ #1"
 				}
@@ -69,6 +85,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 104.0, 45.0, 43.0, 20.0 ],
+					"presentation_rect" : [ 104.0, 45.0, 43.0, 20.0 ],
 					"style" : "",
 					"text" : "gain"
 				}
@@ -82,6 +99,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 104.0, 139.0, 60.0, 22.0 ],
+					"presentation_rect" : [ 104.0, 139.0, 60.0, 22.0 ],
 					"style" : "",
 					"text" : "sah~ 0.5"
 				}
@@ -95,6 +113,11 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 104.0, 65.0, 37.0, 22.0 ],
+					"presentation_rect" : [ 104.0, 65.0, 37.0, 22.0 ],
+					"saved_object_attributes" : 					{
+						"attr_comment" : ""
+					}
+,
 					"style" : "",
 					"text" : "in~ 1"
 				}
@@ -108,6 +131,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 87.0, 167.0, 36.0, 22.0 ],
+					"presentation_rect" : [ 87.0, 167.0, 36.0, 22.0 ],
 					"style" : "",
 					"text" : "*~ 1."
 				}
@@ -120,6 +144,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 29.0, 255.0, 195.0, 22.0 ],
+					"presentation_rect" : [ 29.0, 255.0, 195.0, 22.0 ],
 					"style" : "",
 					"text" : "sagrada.multiout~ #1"
 				}
@@ -133,10 +158,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 29.0, 65.0, 30.0, 22.0 ],
-					"saved_object_attributes" : 					{
-						"attr_comment" : ""
-					}
-,
+					"presentation_rect" : [ 29.0, 65.0, 30.0, 22.0 ],
 					"style" : "",
 					"text" : "in 1"
 				}

@@ -1064,7 +1064,7 @@
 					"outlettype" : [ "signal", "signal" ],
 					"patching_rect" : [ 210.0, 306.0, 302.571442, 22.0 ],
 					"style" : "",
-					"text" : "poly~ LAM.sagran~.p 1 @args #0 @parallel 1"
+					"text" : "poly~ sagrada.sagran~.p 1 @args #0 @parallel 1"
 				}
 
 			}

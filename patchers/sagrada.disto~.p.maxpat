@@ -283,7 +283,7 @@
 					}
 ,
 					"style" : "",
-					"text" : "p LAM.dist.tanh~"
+					"text" : "p sagrada.dist.tanh~"
 				}
 
 			}
