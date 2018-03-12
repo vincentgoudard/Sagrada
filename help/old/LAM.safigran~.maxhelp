@@ -36,7 +36,7 @@
 		"digest" : "",
 		"tags" : "",
 		"style" : "",
-		"subpatcher_template" : "LAM.lib.HelpPatcher",
+		"subpatcher_template" : "sagrada.lib.HelpPatcher",
 		"boxes" : [ 			{
 				"box" : 				{
 					"id" : "obj-4",
@@ -1484,7 +1484,7 @@
 					"outlettype" : [ "signal", "signal" ],
 					"patching_rect" : [ 25.999969, 256.0, 700.750061, 22.0 ],
 					"style" : "",
-					"text" : "LAM.safigran~ 16 mySample1 myEnveloppe"
+					"text" : "sagrada.safigran~ 16 mySample1 myEnveloppe"
 				}
 
 			}
@@ -1501,7 +1501,7 @@
 			}
 , 			{
 				"box" : 				{
-					"args" : [ "@obj-name", "LAM.safigran~", "@obj-desc", "Sample accurate granular synthesis with per grain filter." ],
+					"args" : [ "@obj-name", "sagrada.safigran~", "@obj-desc", "Sample accurate granular synthesis with per grain filter." ],
 					"bgmode" : 0,
 					"border" : 0,
 					"clickthrough" : 0,
@@ -1797,13 +1797,13 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "LAM.safigran~.maxpat",
+				"name" : "sagrada.safigran~.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/Sagrada/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "LAM.safigran~.p.maxpat",
+				"name" : "sagrada.safigran~.p.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/Sagrada/patchers",
 				"type" : "JSON",
 				"implicit" : 1

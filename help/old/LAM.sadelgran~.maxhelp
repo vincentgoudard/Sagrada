@@ -36,7 +36,7 @@
 		"digest" : "",
 		"tags" : "",
 		"style" : "",
-		"subpatcher_template" : "LAM.lib.HelpPatcher",
+		"subpatcher_template" : "sagrada.lib.HelpPatcher",
 		"boxes" : [ 			{
 				"box" : 				{
 					"format" : 6,
@@ -896,7 +896,7 @@
 									"outlettype" : [ "signal" ],
 									"patching_rect" : [ 50.0, 167.0, 96.0, 22.0 ],
 									"style" : "",
-									"text" : "LAM.transratio~"
+									"text" : "sagrada.transratio~"
 								}
 
 							}
@@ -1484,7 +1484,7 @@
 					"outlettype" : [ "signal", "signal" ],
 					"patching_rect" : [ 25.999969, 256.0, 506.000031, 22.0 ],
 					"style" : "",
-					"text" : "LAM.sadelgran~ 16 mySample1 myEnveloppe"
+					"text" : "sagrada.sadelgran~ 16 mySample1 myEnveloppe"
 				}
 
 			}
@@ -1501,7 +1501,7 @@
 			}
 , 			{
 				"box" : 				{
-					"args" : [ "@obj-name", "LAM.sagran~", "@obj-desc", "Sample accurate granular synthesis." ],
+					"args" : [ "@obj-name", "sagrada.sagran~", "@obj-desc", "Sample accurate granular synthesis." ],
 					"bgmode" : 0,
 					"border" : 0,
 					"clickthrough" : 0,
@@ -1806,19 +1806,19 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "LAM.sadelgran~.maxpat",
+				"name" : "sagrada.sadelgran~.maxpat",
 				"bootpath" : "~/Documents/Max/Packages/lam-lib/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "LAM.sadelgran~.p.maxpat",
+				"name" : "sagrada.sadelgran~.p.maxpat",
 				"bootpath" : "~/Documents/Max/Packages/lam-lib/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "LAM.transratio~.maxpat",
+				"name" : "sagrada.transratio~.maxpat",
 				"bootpath" : "~/Documents/Max/Packages/lam-lib/patchers",
 				"type" : "JSON",
 				"implicit" : 1

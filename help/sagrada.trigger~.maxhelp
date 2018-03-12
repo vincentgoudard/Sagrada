@@ -36,7 +36,7 @@
 		"digest" : "",
 		"tags" : "",
 		"style" : "",
-		"subpatcher_template" : "LAM.lib.HelpPatcher",
+		"subpatcher_template" : "sagrada.lib.HelpPatcher",
 		"boxes" : [ 			{
 				"box" : 				{
 					"id" : "obj-48",
@@ -404,7 +404,7 @@
 						"digest" : "",
 						"tags" : "",
 						"style" : "",
-						"subpatcher_template" : "LAM.lib.HelpPatcher",
+						"subpatcher_template" : "sagrada.lib.HelpPatcher",
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-25",
@@ -586,7 +586,7 @@
 														"digest" : "",
 														"tags" : "",
 														"style" : "",
-														"subpatcher_template" : "LAM.lib.HelpPatcher",
+														"subpatcher_template" : "sagrada.lib.HelpPatcher",
 														"boxes" : [ 															{
 																"box" : 																{
 																	"format" : 6,
@@ -1002,7 +1002,7 @@
 										"digest" : "",
 										"tags" : "",
 										"style" : "",
-										"subpatcher_template" : "LAM.lib.HelpPatcher",
+										"subpatcher_template" : "sagrada.lib.HelpPatcher",
 										"boxes" : [ 											{
 												"box" : 												{
 													"id" : "obj-4",
@@ -1706,7 +1706,7 @@
 						"digest" : "",
 						"tags" : "",
 						"style" : "",
-						"subpatcher_template" : "LAM.lib.HelpPatcher",
+						"subpatcher_template" : "sagrada.lib.HelpPatcher",
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-26",
@@ -1897,7 +1897,7 @@
 						"digest" : "",
 						"tags" : "",
 						"style" : "",
-						"subpatcher_template" : "LAM.lib.HelpPatcher",
+						"subpatcher_template" : "sagrada.lib.HelpPatcher",
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-26",
@@ -2088,7 +2088,7 @@
 						"digest" : "",
 						"tags" : "",
 						"style" : "",
-						"subpatcher_template" : "LAM.lib.HelpPatcher",
+						"subpatcher_template" : "sagrada.lib.HelpPatcher",
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-26",
@@ -2279,7 +2279,7 @@
 						"digest" : "",
 						"tags" : "",
 						"style" : "",
-						"subpatcher_template" : "LAM.lib.HelpPatcher",
+						"subpatcher_template" : "sagrada.lib.HelpPatcher",
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-26",

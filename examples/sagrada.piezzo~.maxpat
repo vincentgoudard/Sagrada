@@ -36,7 +36,7 @@
 		"digest" : "",
 		"tags" : "",
 		"style" : "",
-		"subpatcher_template" : "LAM.lib.HelpPatcher",
+		"subpatcher_template" : "sagrada.lib.HelpPatcher",
 		"boxes" : [ 			{
 				"box" : 				{
 					"id" : "obj-58",
@@ -121,7 +121,7 @@
 					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 841.0, 132.0, 223.0, 22.0 ],
 					"style" : "",
-					"text" : "gen~ @gen LAM.debounceclick.gendsp"
+					"text" : "gen~ @gen sagrada.debounceclick.gendsp"
 				}
 
 			}
@@ -374,7 +374,7 @@
 									"outlettype" : [ "signal" ],
 									"patching_rect" : [ 20.0, 189.0, 139.0, 22.0 ],
 									"style" : "",
-									"text" : "LAM.randistlist~"
+									"text" : "sagrada.randistlist~"
 								}
 
 							}
@@ -436,7 +436,7 @@
 									"outlettype" : [ "signal" ],
 									"patching_rect" : [ 20.0, 259.0, 96.0, 22.0 ],
 									"style" : "",
-									"text" : "LAM.transratio~"
+									"text" : "sagrada.transratio~"
 								}
 
 							}
@@ -664,7 +664,7 @@
 						"digest" : "",
 						"tags" : "",
 						"style" : "",
-						"subpatcher_template" : "LAM.lib.HelpPatcher",
+						"subpatcher_template" : "sagrada.lib.HelpPatcher",
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-64",
@@ -812,7 +812,7 @@
 						"digest" : "",
 						"tags" : "",
 						"style" : "",
-						"subpatcher_template" : "LAM.lib.HelpPatcher",
+						"subpatcher_template" : "sagrada.lib.HelpPatcher",
 						"boxes" : [ 							{
 								"box" : 								{
 									"format" : 6,
@@ -929,7 +929,7 @@
 						"digest" : "",
 						"tags" : "",
 						"style" : "",
-						"subpatcher_template" : "LAM.lib.HelpPatcher",
+						"subpatcher_template" : "sagrada.lib.HelpPatcher",
 						"boxes" : [ 							{
 								"box" : 								{
 									"format" : 6,
@@ -3021,7 +3021,7 @@
 						"digest" : "",
 						"tags" : "",
 						"style" : "",
-						"subpatcher_template" : "LAM.lib.HelpPatcher",
+						"subpatcher_template" : "sagrada.lib.HelpPatcher",
 						"boxes" : [ 							{
 								"box" : 								{
 									"bubble" : 1,
@@ -3495,7 +3495,7 @@
 						"digest" : "",
 						"tags" : "",
 						"style" : "",
-						"subpatcher_template" : "LAM.lib.HelpPatcher",
+						"subpatcher_template" : "sagrada.lib.HelpPatcher",
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-1",
@@ -3700,7 +3700,7 @@
 						"digest" : "",
 						"tags" : "",
 						"style" : "",
-						"subpatcher_template" : "LAM.lib.HelpPatcher",
+						"subpatcher_template" : "sagrada.lib.HelpPatcher",
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-1",
@@ -3889,7 +3889,7 @@
 						"digest" : "",
 						"tags" : "",
 						"style" : "",
-						"subpatcher_template" : "LAM.lib.HelpPatcher",
+						"subpatcher_template" : "sagrada.lib.HelpPatcher",
 						"boxes" : [ 							{
 								"box" : 								{
 									"comment" : "",
@@ -3974,7 +3974,7 @@
 										"digest" : "",
 										"tags" : "",
 										"style" : "",
-										"subpatcher_template" : "LAM.lib.HelpPatcher",
+										"subpatcher_template" : "sagrada.lib.HelpPatcher",
 										"boxes" : [ 											{
 												"box" : 												{
 													"format" : 6,
@@ -4145,7 +4145,7 @@
 										"digest" : "",
 										"tags" : "",
 										"style" : "",
-										"subpatcher_template" : "LAM.lib.HelpPatcher",
+										"subpatcher_template" : "sagrada.lib.HelpPatcher",
 										"boxes" : [ 											{
 												"box" : 												{
 													"id" : "obj-30",
@@ -4261,7 +4261,7 @@
 										"digest" : "",
 										"tags" : "",
 										"style" : "",
-										"subpatcher_template" : "LAM.lib.HelpPatcher",
+										"subpatcher_template" : "sagrada.lib.HelpPatcher",
 										"boxes" : [ 											{
 												"box" : 												{
 													"id" : "obj-43",
@@ -4469,7 +4469,7 @@
 										"digest" : "",
 										"tags" : "",
 										"style" : "",
-										"subpatcher_template" : "LAM.lib.HelpPatcher",
+										"subpatcher_template" : "sagrada.lib.HelpPatcher",
 										"boxes" : [ 											{
 												"box" : 												{
 													"bubble" : 1,
@@ -4846,7 +4846,7 @@
 						"digest" : "",
 						"tags" : "",
 						"style" : "",
-						"subpatcher_template" : "LAM.lib.HelpPatcher",
+						"subpatcher_template" : "sagrada.lib.HelpPatcher",
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-17",
@@ -5202,7 +5202,7 @@
 						"digest" : "",
 						"tags" : "",
 						"style" : "",
-						"subpatcher_template" : "LAM.lib.HelpPatcher",
+						"subpatcher_template" : "sagrada.lib.HelpPatcher",
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-2",
@@ -5445,7 +5445,7 @@
 									"outlettype" : [ "signal" ],
 									"patching_rect" : [ 20.0, 189.0, 139.0, 22.0 ],
 									"style" : "",
-									"text" : "LAM.randistlist~"
+									"text" : "sagrada.randistlist~"
 								}
 
 							}
@@ -5507,7 +5507,7 @@
 									"outlettype" : [ "signal" ],
 									"patching_rect" : [ 20.0, 259.0, 96.0, 22.0 ],
 									"style" : "",
-									"text" : "LAM.transratio~"
+									"text" : "sagrada.transratio~"
 								}
 
 							}
@@ -5664,7 +5664,7 @@
 						"digest" : "",
 						"tags" : "",
 						"style" : "",
-						"subpatcher_template" : "LAM.lib.HelpPatcher",
+						"subpatcher_template" : "sagrada.lib.HelpPatcher",
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-17",
@@ -7765,7 +7765,7 @@
 					"id" : "obj-5",
 					"lockeddragscroll" : 0,
 					"maxclass" : "bpatcher",
-					"name" : "LAM.helpheader.maxpat",
+					"name" : "sagrada.helpheader.maxpat",
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"offset" : [ 0.0, 0.0 ],
@@ -8331,7 +8331,7 @@
 		}
 ,
 		"dependency_cache" : [ 			{
-				"name" : "LAM.helpheader.maxpat",
+				"name" : "sagrada.helpheader.maxpat",
 				"bootpath" : "~/Documents/Max/Packages/lam-lib/patchers",
 				"patcherrelativepath" : "../../../../Max/Packages/lam-lib/patchers",
 				"type" : "JSON",
@@ -8373,7 +8373,7 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "LAM.clickramp.bipolar~.maxpat",
+				"name" : "sagrada.clickramp.bipolar~.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/Sagrada/patchers",
 				"patcherrelativepath" : "../patchers",
 				"type" : "JSON",
@@ -8443,14 +8443,14 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "LAM.transratio~.maxpat",
+				"name" : "sagrada.transratio~.maxpat",
 				"bootpath" : "~/Documents/Max/Packages/lam-lib/patchers",
 				"patcherrelativepath" : "../../../../Max/Packages/lam-lib/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "LAM.randistlist~.maxpat",
+				"name" : "sagrada.randistlist~.maxpat",
 				"bootpath" : "~/Documents/Max/Packages/lam-lib/patchers",
 				"patcherrelativepath" : "../../../../Max/Packages/lam-lib/patchers",
 				"type" : "JSON",
@@ -8471,7 +8471,7 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "LAM.DCblock~.maxpat",
+				"name" : "sagrada.DCblock~.maxpat",
 				"bootpath" : "~/Documents/Max/Packages/lam-lib/patchers",
 				"patcherrelativepath" : "../../../../Max/Packages/lam-lib/patchers",
 				"type" : "JSON",
@@ -8555,7 +8555,7 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "LAM.clickramp~.maxpat",
+				"name" : "sagrada.clickramp~.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/Sagrada/patchers",
 				"patcherrelativepath" : "../patchers",
 				"type" : "JSON",
@@ -8602,7 +8602,7 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "LAM.debounceclick.gendsp",
+				"name" : "sagrada.debounceclick.gendsp",
 				"bootpath" : "~/Documents/Max/Packages/lam-lib/patchers",
 				"patcherrelativepath" : "../../../../Max/Packages/lam-lib/patchers",
 				"type" : "gDSP",

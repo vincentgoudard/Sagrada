@@ -36,7 +36,7 @@
 		"digest" : "",
 		"tags" : "",
 		"style" : "",
-		"subpatcher_template" : "LAM.lib.HelpPatcher",
+		"subpatcher_template" : "sagrada.lib.HelpPatcher",
 		"boxes" : [ 			{
 				"box" : 				{
 					"format" : 6,
@@ -227,7 +227,7 @@
 						"digest" : "",
 						"tags" : "",
 						"style" : "",
-						"subpatcher_template" : "LAM.lib.HelpPatcher",
+						"subpatcher_template" : "sagrada.lib.HelpPatcher",
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-1",
@@ -363,7 +363,7 @@
 						"digest" : "",
 						"tags" : "",
 						"style" : "",
-						"subpatcher_template" : "LAM.lib.HelpPatcher",
+						"subpatcher_template" : "sagrada.lib.HelpPatcher",
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-17",
@@ -719,7 +719,7 @@
 						"digest" : "",
 						"tags" : "",
 						"style" : "",
-						"subpatcher_template" : "LAM.lib.HelpPatcher",
+						"subpatcher_template" : "sagrada.lib.HelpPatcher",
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-17",
@@ -2711,7 +2711,7 @@
 					"id" : "obj-5",
 					"lockeddragscroll" : 0,
 					"maxclass" : "bpatcher",
-					"name" : "LAM.helpheader.maxpat",
+					"name" : "sagrada.helpheader.maxpat",
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"offset" : [ 0.0, 0.0 ],
@@ -2893,7 +2893,7 @@
 									"id" : "obj-47",
 									"lockeddragscroll" : 0,
 									"maxclass" : "bpatcher",
-									"name" : "LAM.n.trigran.ctl~.maxpat",
+									"name" : "sagrada.n.trigran.ctl~.maxpat",
 									"numinlets" : 2,
 									"numoutlets" : 2,
 									"offset" : [ 0.0, 0.0 ],
@@ -2912,7 +2912,7 @@
 									"outlettype" : [ "signal" ],
 									"patching_rect" : [ 50.0, 200.0, 96.0, 22.0 ],
 									"style" : "",
-									"text" : "LAM.transratio~"
+									"text" : "sagrada.transratio~"
 								}
 
 							}
@@ -3822,7 +3822,7 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "LAM.clickramp~.maxpat",
+				"name" : "sagrada.clickramp~.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/Sagrada/patchers",
 				"patcherrelativepath" : "../patchers",
 				"type" : "JSON",
@@ -3871,14 +3871,14 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "LAM.transratio~.maxpat",
+				"name" : "sagrada.transratio~.maxpat",
 				"bootpath" : "~/Documents/Max/Packages/lam-lib/patchers",
 				"patcherrelativepath" : "../../../../Max/Packages/lam-lib/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "LAM.n.trigran.ctl~.maxpat",
+				"name" : "sagrada.n.trigran.ctl~.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/Sagrada/patchers",
 				"patcherrelativepath" : "../patchers",
 				"type" : "JSON",
@@ -3897,7 +3897,7 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "LAM.helpheader.maxpat",
+				"name" : "sagrada.helpheader.maxpat",
 				"bootpath" : "~/Documents/Max/Packages/lam-lib/patchers",
 				"patcherrelativepath" : "../../../../Max/Packages/lam-lib/patchers",
 				"type" : "JSON",
@@ -3925,7 +3925,7 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "LAM.clickramp.bipolar~.maxpat",
+				"name" : "sagrada.clickramp.bipolar~.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/Sagrada/patchers",
 				"patcherrelativepath" : "../patchers",
 				"type" : "JSON",

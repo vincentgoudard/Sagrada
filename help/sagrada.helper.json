@@ -23,5 +23,10 @@
 		"categories" : "utility",
 		"description" : "Turn any input stream into grains."
 	}
+,
+	"sagrada~" : 	{
+		"description" : "Modular & sample accurate granular synthesis.",
+		"categories" : [ "alpha", "beta", "gamma" ]
+	}
 
 }

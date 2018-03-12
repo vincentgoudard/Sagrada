@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 296.0, 169.0, 808.0, 383.0 ],
+		"rect" : [ 135.0, 335.0, 808.0, 383.0 ],
 		"bgcolor" : [ 0.9, 0.91, 0.91, 1.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
@@ -36,7 +36,7 @@
 		"digest" : "",
 		"tags" : "",
 		"style" : "",
-		"subpatcher_template" : "LAM.lib.HelpPatcher",
+		"subpatcher_template" : "sagrada.lib.HelpPatcher",
 		"boxes" : [ 			{
 				"box" : 				{
 					"format" : 6,
@@ -62,7 +62,7 @@
 					"patching_rect" : [ 546.0, 156.0, 64.0, 22.0 ],
 					"presentation_rect" : [ 546.0, 156.0, 64.0, 22.0 ],
 					"style" : "",
-					"text" : "sig~ 100"
+					"text" : "sig~ -100"
 				}
 
 			}
@@ -112,10 +112,11 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 469.0, 186.0, 136.0, 22.0 ],
-					"presentation_rect" : [ 469.0, 186.0, 136.0, 22.0 ],
+					"patching_rect" : [ 469.0, 186.0, 152.0, 22.0 ],
+					"presentation_linecount" : 2,
+					"presentation_rect" : [ 469.0, 186.0, 152.0, 22.0 ],
 					"style" : "",
-					"text" : "LAM.clickramp.bipolar~"
+					"text" : "sagrada.clickramp.bipolar~"
 				}
 
 			}
@@ -206,10 +207,11 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 80.0, 186.0, 96.0, 22.0 ],
-					"presentation_rect" : [ 80.0, 186.0, 96.0, 22.0 ],
+					"patching_rect" : [ 80.0, 186.0, 114.0, 22.0 ],
+					"presentation_linecount" : 2,
+					"presentation_rect" : [ 80.0, 186.0, 114.0, 22.0 ],
 					"style" : "",
-					"text" : "LAM.clickramp~"
+					"text" : "sagrada.clickramp~"
 				}
 
 			}
@@ -242,10 +244,11 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 5.5, 65.060059, 665.0, 20.0 ],
-					"presentation_rect" : [ 5.5, 65.060059, 665.0, 20.0 ],
+					"patching_rect" : [ 5.5, 65.060059, 683.0, 20.0 ],
+					"presentation_linecount" : 2,
+					"presentation_rect" : [ 5.5, 65.060059, 683.0, 20.0 ],
 					"style" : "",
-					"text" : "Trigger a ramp with (signal-accurate) click. Useful for sample-accurate granular synthesis. See LAM.sagran~ objects family."
+					"text" : "Trigger a ramp with (signal-accurate) click. Useful for sample-accurate granular synthesis. See sagrada.sagran~ objects family."
 				}
 
 			}
@@ -352,14 +355,14 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "LAM.clickramp~.maxpat",
+				"name" : "sagrada.clickramp~.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/Sagrada/patchers",
 				"patcherrelativepath" : "../patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "LAM.clickramp.bipolar~.maxpat",
+				"name" : "sagrada.clickramp.bipolar~.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/Sagrada/patchers",
 				"patcherrelativepath" : "../patchers",
 				"type" : "JSON",
