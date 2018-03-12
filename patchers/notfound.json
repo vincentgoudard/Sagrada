@@ -1,0 +1,7 @@
+{
+	"sagrada.busy" : 	{
+		"categories" : "utilities",
+		"description" : "Busy state notifier for sagrada modules."
+	}
+
+}

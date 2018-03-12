@@ -1,0 +1,27 @@
+{
+	"sagrada.busy" : 	{
+		"categories" : "utilities",
+		"description" : "Busy state notifier for sagrada modules."
+	}
+,
+	"sagrada.clickramp~" : 	{
+		"categories" : "utilities",
+		"description" : "Signal-triggered ramp."
+	}
+,
+	"sagrada.multilayer~" : 	{
+		"categories" : "utilities",
+		"description" : "A multiplexed clock for multi-layer triggering."
+	}
+,
+	"sagrada.trigger~" : 	{
+		"description" : "The Sagrada objects clock",
+		"categories" : [ "alpha", "beta", "gamma" ]
+	}
+,
+	"sagrada.granify~" : 	{
+		"categories" : "utility",
+		"description" : "Turn any input stream into grains."
+	}
+
+}
