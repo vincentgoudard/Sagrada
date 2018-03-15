@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 221.0, 140.0, 838.0, 488.0 ],
+		"rect" : [ 100.0, 100.0, 838.0, 488.0 ],
 		"bgcolor" : [ 0.9, 0.91, 0.91, 1.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
@@ -48,7 +48,7 @@
 					"patching_rect" : [ 347.5, 369.5, 437.0, 20.0 ],
 					"presentation_rect" : [ 347.5, 369.5, 437.0, 20.0 ],
 					"style" : "",
-					"text" : "Note that there can only be one instance of sagrada.busy in the DSP chain."
+					"text" : "Note that there can only be one instance of sagrada.busy per sagrada context."
 				}
 
 			}
@@ -293,13 +293,13 @@
 					"presentation_rect" : [ 38.0, 330.0, 138.0, 20.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_mmax" : 6.0,
 							"parameter_initial" : [ 0.0 ],
 							"parameter_shortname" : "live.gain~",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 4,
 							"parameter_mmin" : -70.0,
-							"parameter_longname" : "live.gain~",
-							"parameter_mmax" : 6.0
+							"parameter_longname" : "live.gain~"
 						}
 
 					}

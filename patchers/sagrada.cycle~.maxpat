@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 729.0, 170.0, 488.0, 318.0 ],
+		"rect" : [ 729.0, 170.0, 621.0, 248.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -38,13 +38,13 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
-					"comment" : "pitch (signal)",
+					"comment" : "duration (signal)",
 					"id" : "obj-1",
 					"index" : 3,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "signal" ],
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 526.693054, 73.0, 30.0, 30.0 ],
 					"presentation_rect" : [ 526.693054, 73.0, 30.0, 30.0 ],
 					"style" : ""
@@ -250,7 +250,7 @@
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 26.653503, 30.5, 30.0, 30.0 ],
 					"presentation_rect" : [ 26.653503, 30.5, 30.0, 30.0 ],
 					"style" : ""
@@ -260,15 +260,13 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-78",
-					"linecount" : 2,
 					"maxclass" : "newobj",
 					"numinlets" : 2,
 					"numoutlets" : 0,
-					"patching_rect" : [ 215.0, 131.0, 330.693054, 35.0 ],
-					"presentation_linecount" : 2,
-					"presentation_rect" : [ 215.0, 131.0, 330.693054, 35.0 ],
+					"patching_rect" : [ 215.0, 131.0, 330.693054, 22.0 ],
+					"presentation_rect" : [ 215.0, 131.0, 330.693054, 22.0 ],
 					"style" : "",
-					"text" : "poly~ sagrada.decaysine~.p 1 @args #1 @parallel 1"
+					"text" : "poly~ sagrada.cycle~.p 1 @args #1 @parallel 1"
 				}
 
 			}
