@@ -28,5 +28,30 @@
 		"description" : "Modular & sample accurate granular synthesis.",
 		"categories" : [ "alpha", "beta", "gamma" ]
 	}
+,
+	"sagrada.play~" : 	{
+		"description" : "A simple sample grain player.",
+		"categories" : "component"
+	}
+,
+	"sagrada.pan~" : 	{
+		"categories" : "component",
+		"description" : "Panning your grains."
+	}
+,
+	"sagrada.glissonplayer~" : 	{
+		"categories" : "component",
+		"description" : "A simple glisson grain player."
+	}
+,
+	"sagrada.cycle~" : 	{
+		"categories" : "component",
+		"description" : "A simple sinewave grain player."
+	}
+,
+	"sagrada.decaysine~" : 	{
+		"categories" : "component",
+		"description" : "Decaying sinewave grains generator."
+	}
 
 }
