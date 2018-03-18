@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 80.0, 109.0, 829.0, 591.0 ],
+		"rect" : [ 113.0, 132.0, 829.0, 591.0 ],
 		"bgcolor" : [ 0.9, 0.91, 0.91, 1.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
@@ -276,7 +276,7 @@
 					"patching_rect" : [ 244.0, 263.0, 61.0, 22.0 ],
 					"presentation_rect" : [ 244.0, 263.0, 61.0, 22.0 ],
 					"style" : "",
-					"text" : "sig~ 1000"
+					"text" : "sig~ 200"
 				}
 
 			}
@@ -1699,13 +1699,13 @@
 					"presentation_rect" : [ 131.0, 450.5, 238.0, 36.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_shortname" : "live.gain~",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 4,
 							"parameter_mmin" : -70.0,
 							"parameter_longname" : "live.gain~",
 							"parameter_mmax" : 6.0,
-							"parameter_initial" : [ 0.0 ]
+							"parameter_initial" : [ 0.0 ],
+							"parameter_shortname" : "live.gain~"
 						}
 
 					}

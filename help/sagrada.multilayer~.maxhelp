@@ -53,7 +53,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 293.0, 115.0, 896.0, 672.0 ],
+						"rect" : [ 519.0, 210.0, 896.0, 672.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -81,6 +81,97 @@
 						"style" : "",
 						"subpatcher_template" : "sagrada.lib.HelpPatcher",
 						"boxes" : [ 							{
+								"box" : 								{
+									"id" : "obj-53",
+									"maxclass" : "newobj",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "signal" ],
+									"patching_rect" : [ 460.0, 276.0, 30.0, 22.0 ],
+									"presentation_rect" : [ 460.0, 276.0, 30.0, 22.0 ],
+									"style" : "",
+									"text" : "-~ 1"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-37",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "list" ],
+									"patching_rect" : [ 581.5, 194.0, 66.0, 22.0 ],
+									"presentation_rect" : [ 581.5, 194.0, 66.0, 22.0 ],
+									"style" : "",
+									"text" : "listfunnel 0"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"candycane" : 8,
+									"contdata" : 1,
+									"ghostbar" : 70,
+									"id" : "obj-27",
+									"maxclass" : "multislider",
+									"numinlets" : 1,
+									"numoutlets" : 2,
+									"outlettype" : [ "", "" ],
+									"parameter_enable" : 0,
+									"patching_rect" : [ 581.5, 132.0, 132.0, 53.0 ],
+									"presentation_rect" : [ 581.5, 132.0, 132.0, 53.0 ],
+									"setminmax" : [ -12.0, 12.0 ],
+									"signed" : 1,
+									"size" : 8,
+									"spacing" : 1,
+									"style" : ""
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-21",
+									"maxclass" : "newobj",
+									"numinlets" : 3,
+									"numoutlets" : 1,
+									"outlettype" : [ "float" ],
+									"patching_rect" : [ 581.5, 225.0, 83.0, 22.0 ],
+									"presentation_rect" : [ 581.5, 225.0, 83.0, 22.0 ],
+									"style" : "",
+									"text" : "peek~ pitches"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-11",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 2,
+									"outlettype" : [ "float", "bang" ],
+									"patching_rect" : [ 668.5, 225.0, 148.0, 22.0 ],
+									"presentation_rect" : [ 668.5, 225.0, 148.0, 22.0 ],
+									"style" : "",
+									"text" : "buffer~ pitches @samps 8"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-1",
+									"maxclass" : "newobj",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "signal" ],
+									"patching_rect" : [ 460.0, 307.0, 86.0, 22.0 ],
+									"presentation_rect" : [ 460.0, 307.0, 86.0, 22.0 ],
+									"style" : "",
+									"text" : "index~ pitches"
+								}
+
+							}
+, 							{
 								"box" : 								{
 									"bubble" : 1,
 									"id" : "obj-2",
@@ -1176,13 +1267,13 @@
 									"presentation_rect" : [ 31.0, 557.5, 274.0, 36.0 ],
 									"saved_attribute_attributes" : 									{
 										"valueof" : 										{
+											"parameter_mmax" : 6.0,
 											"parameter_initial" : [ 0.0 ],
 											"parameter_shortname" : "live.gain~",
 											"parameter_type" : 0,
 											"parameter_unitstyle" : 4,
 											"parameter_mmin" : -70.0,
-											"parameter_longname" : "live.gain~[1]",
-											"parameter_mmax" : 6.0
+											"parameter_longname" : "live.gain~[1]"
 										}
 
 									}
@@ -1374,7 +1465,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 540.0, 346.5, 158.5, 51.0 ],
-									"presentation_linecount" : 6,
+									"presentation_linecount" : 3,
 									"presentation_rect" : [ 540.0, 346.5, 158.5, 51.0 ],
 									"style" : "",
 									"text" : "enveloppe #1 on attack\nenveloppe #3 on release\nenveloppe #2 on sustain"
@@ -1521,6 +1612,20 @@
 										"style" : "",
 										"subpatcher_template" : "",
 										"boxes" : [ 											{
+												"box" : 												{
+													"id" : "obj-2",
+													"maxclass" : "message",
+													"numinlets" : 2,
+													"numoutlets" : 1,
+													"outlettype" : [ "" ],
+													"patching_rect" : [ 135.416687, 16.5, 85.0, 22.0 ],
+													"presentation_rect" : [ 135.416687, 16.5, 85.0, 22.0 ],
+													"style" : "",
+													"text" : "read duduk.aif"
+												}
+
+											}
+, 											{
 												"box" : 												{
 													"id" : "obj-3",
 													"maxclass" : "newobj",
@@ -1916,6 +2021,13 @@
 													"destination" : [ "obj-57", 0 ],
 													"hidden" : 1,
 													"source" : [ "obj-19", 0 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"destination" : [ "obj-79", 0 ],
+													"source" : [ "obj-2", 0 ]
 												}
 
 											}
@@ -2854,22 +2966,7 @@
 									"presentation_linecount" : 5,
 									"presentation_rect" : [ 31.0, 23.060059, 824.0, 74.0 ],
 									"style" : "",
-									"text" : "Here is an example of grain-layer management.\nThe object \"sagrada.multilayer\" output trigger clicks, an incrementing grainCount and a layer index.\nWe mapped the layer index on the pitch value, and mapped the grainCount to the enveloppe.\nGrainCount returns -1 for the last grain (so that we know it is the last grain)\nThe 1st grain is modulated by an expo-decay enveloppe (stored in buffer Enveloppe1) and the following grains are modulated by a hanning enveloppe. ",
-									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-13",
-									"maxclass" : "newobj",
-									"numinlets" : 2,
-									"numoutlets" : 1,
-									"outlettype" : [ "signal" ],
-									"patching_rect" : [ 460.0, 312.0, 32.0, 22.0 ],
-									"presentation_rect" : [ 460.0, 312.0, 32.0, 22.0 ],
-									"style" : "",
-									"text" : "*~ 3"
+									"text" : "Here is an example of grain-layer management.\nThe object \"sagrada.multilayer\" output trigger clicks, an incrementing grainCount and a layer index.\nWe mapped the layer index on the pitch value, and mapped the grainCount to the enveloppe.\nGrainCount returns -1 for the last grain (so that we know it is the last grain)\nThe 1st grain is modulated by an expo-decay enveloppe (stored in buffer Enveloppe1) and the following grains are modulated by a hanning enveloppe. "
 								}
 
 							}
@@ -2940,8 +3037,8 @@
 													"numoutlets" : 2,
 													"outlettype" : [ "", "bang" ],
 													"parameter_enable" : 0,
-													"patching_rect" : [ 101.0, 102.0, 50.0, 22.0 ],
-													"presentation_rect" : [ 101.0, 102.0, 50.0, 22.0 ],
+													"patching_rect" : [ 63.0, 92.5, 50.0, 22.0 ],
+													"presentation_rect" : [ 63.0, 92.5, 50.0, 22.0 ],
 													"style" : ""
 												}
 
@@ -2968,8 +3065,8 @@
 													"numinlets" : 1,
 													"numoutlets" : 1,
 													"outlettype" : [ "signal" ],
-													"patching_rect" : [ 50.0, 59.5, 46.0, 22.0 ],
-													"presentation_rect" : [ 50.0, 59.5, 46.0, 22.0 ],
+													"patching_rect" : [ 12.0, 50.0, 46.0, 22.0 ],
+													"presentation_rect" : [ 12.0, 50.0, 46.0, 22.0 ],
 													"style" : "",
 													"text" : "noise~"
 												}
@@ -2982,22 +3079,10 @@
 													"numinlets" : 2,
 													"numoutlets" : 1,
 													"outlettype" : [ "signal" ],
-													"patching_rect" : [ 50.0, 119.5, 42.0, 22.0 ],
-													"presentation_rect" : [ 50.0, 119.5, 42.0, 22.0 ],
+													"patching_rect" : [ 12.0, 110.0, 42.0, 22.0 ],
+													"presentation_rect" : [ 12.0, 110.0, 42.0, 22.0 ],
 													"style" : "",
 													"text" : "*~ 0.2"
-												}
-
-											}
-, 											{
-												"box" : 												{
-													"id" : "obj-48",
-													"maxclass" : "scope~",
-													"numinlets" : 2,
-													"numoutlets" : 0,
-													"patching_rect" : [ 358.0, 170.0, 130.0, 130.0 ],
-													"presentation_rect" : [ 358.0, 170.0, 130.0, 130.0 ],
-													"style" : ""
 												}
 
 											}
@@ -3295,7 +3380,7 @@
 									"patching_rect" : [ 185.75, 336.0, 63.0, 22.0 ],
 									"presentation_rect" : [ 185.75, 336.0, 63.0, 22.0 ],
 									"style" : "",
-									"text" : "sig~ 700"
+									"text" : "sig~ 400"
 								}
 
 							}
@@ -3474,10 +3559,10 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "float" ],
-									"patching_rect" : [ 364.5, 151.0, 29.5, 22.0 ],
-									"presentation_rect" : [ 364.5, 151.0, 29.5, 22.0 ],
+									"patching_rect" : [ 364.5, 151.0, 33.0, 22.0 ],
+									"presentation_rect" : [ 364.5, 151.0, 33.0, 22.0 ],
 									"style" : "",
-									"text" : "* 3."
+									"text" : "* 10."
 								}
 
 							}
@@ -3531,10 +3616,10 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "float" ],
-									"patching_rect" : [ 282.5, 151.0, 29.5, 22.0 ],
-									"presentation_rect" : [ 282.5, 151.0, 29.5, 22.0 ],
+									"patching_rect" : [ 282.5, 151.0, 33.0, 22.0 ],
+									"presentation_rect" : [ 282.5, 151.0, 33.0, 22.0 ],
 									"style" : "",
-									"text" : "* 3."
+									"text" : "* 10."
 								}
 
 							}
@@ -3559,10 +3644,10 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "float" ],
-									"patching_rect" : [ 202.5, 151.0, 29.5, 22.0 ],
-									"presentation_rect" : [ 202.5, 151.0, 29.5, 22.0 ],
+									"patching_rect" : [ 202.5, 151.0, 33.0, 22.0 ],
+									"presentation_rect" : [ 202.5, 151.0, 33.0, 22.0 ],
 									"style" : "",
-									"text" : "* 3."
+									"text" : "* 10."
 								}
 
 							}
@@ -3635,12 +3720,19 @@
 									"patching_rect" : [ 202.5, 244.0, 248.0, 22.0 ],
 									"presentation_rect" : [ 202.5, 244.0, 248.0, 22.0 ],
 									"style" : "",
-									"text" : "sagrada.multilayer~ 4"
+									"text" : "sagrada.multilayer~ 8"
 								}
 
 							}
  ],
 						"lines" : [ 							{
+								"patchline" : 								{
+									"destination" : [ "obj-81", 0 ],
+									"source" : [ "obj-1", 0 ]
+								}
+
+							}
+, 							{
 								"patchline" : 								{
 									"destination" : [ "obj-6", 0 ],
 									"source" : [ "obj-10", 0 ]
@@ -3658,13 +3750,6 @@
 								"patchline" : 								{
 									"destination" : [ "obj-14", 0 ],
 									"source" : [ "obj-12", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-81", 0 ],
-									"source" : [ "obj-13", 0 ]
 								}
 
 							}
@@ -3729,6 +3814,13 @@
 							}
 , 							{
 								"patchline" : 								{
+									"destination" : [ "obj-37", 0 ],
+									"source" : [ "obj-27", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-22", 0 ],
 									"source" : [ "obj-29", 0 ]
 								}
@@ -3759,6 +3851,13 @@
 								"patchline" : 								{
 									"destination" : [ "obj-24", 0 ],
 									"source" : [ "obj-35", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-21", 0 ],
+									"source" : [ "obj-37", 0 ]
 								}
 
 							}
@@ -3807,17 +3906,17 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-12", 0 ],
-									"midpoints" : [ 326.5, 287.0, 762.5, 287.0 ],
-									"order" : 1,
-									"source" : [ "obj-6", 1 ]
+									"destination" : [ "obj-1", 0 ],
+									"source" : [ "obj-53", 0 ]
 								}
 
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-13", 0 ],
-									"source" : [ "obj-6", 2 ]
+									"destination" : [ "obj-12", 0 ],
+									"midpoints" : [ 326.5, 287.0, 762.5, 287.0 ],
+									"order" : 1,
+									"source" : [ "obj-6", 1 ]
 								}
 
 							}
@@ -3835,6 +3934,13 @@
 									"destination" : [ "obj-3", 0 ],
 									"order" : 3,
 									"source" : [ "obj-6", 1 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-53", 0 ],
+									"source" : [ "obj-6", 2 ]
 								}
 
 							}

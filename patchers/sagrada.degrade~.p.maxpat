@@ -2,10 +2,10 @@
 	"patcher" : 	{
 		"fileversion" : 1,
 		"appversion" : 		{
-			"major" : 7,
-			"minor" : 3,
-			"revision" : 4,
-			"architecture" : "x86",
+			"major" : 8,
+			"minor" : 0,
+			"revision" : 0,
+			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
@@ -44,34 +44,9 @@
 					"numoutlets" : 4,
 					"outlettype" : [ "", "signal", "signal", "" ],
 					"patching_rect" : [ 30.700012, 67.0, 192.0, 22.0 ],
+					"presentation_rect" : [ 30.700012, 67.0, 192.0, 22.0 ],
 					"style" : "",
 					"text" : "sagrada.iosetter~ myContext"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-38",
-					"maxclass" : "newobj",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "float" ],
-					"patching_rect" : [ 272.400024, 157.0, 83.0, 22.0 ],
-					"style" : "",
-					"text" : "snapshot~ 10"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-3",
-					"maxclass" : "newobj",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "float" ],
-					"patching_rect" : [ 180.550018, 157.0, 83.0, 22.0 ],
-					"style" : "",
-					"text" : "snapshot~ 10"
 				}
 
 			}
@@ -82,6 +57,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 344.250031, 14.0, 29.0, 20.0 ],
+					"presentation_rect" : [ 344.250031, 14.0, 29.0, 20.0 ],
 					"style" : "",
 					"text" : "bits"
 				}
@@ -94,6 +70,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 259.400024, 14.0, 27.0, 20.0 ],
+					"presentation_rect" : [ 259.400024, 14.0, 27.0, 20.0 ],
 					"style" : "",
 					"text" : "SR"
 				}
@@ -106,9 +83,10 @@
 					"numinlets" : 3,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 88.700012, 192.0, 202.700012, 22.0 ],
+					"patching_rect" : [ 88.700012, 192.0, 215.0, 22.0 ],
+					"presentation_rect" : [ 88.700012, 192.0, 215.0, 22.0 ],
 					"style" : "",
-					"text" : "degrade~"
+					"text" : "gen~ @gen sagrada.degrade~.gendsp"
 				}
 
 			}
@@ -120,10 +98,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 30.700012, 40.0, 30.0, 22.0 ],
-					"saved_object_attributes" : 					{
-						"attr_comment" : ""
-					}
-,
+					"presentation_rect" : [ 30.700012, 40.0, 30.0, 22.0 ],
 					"style" : "",
 					"text" : "in 1"
 				}
@@ -136,6 +111,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 30.700012, 237.0, 195.0, 22.0 ],
+					"presentation_rect" : [ 30.700012, 237.0, 195.0, 22.0 ],
 					"style" : "",
 					"text" : "sagrada.multiout~ #1"
 				}
@@ -149,6 +125,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 272.400024, 130.0, 57.0, 22.0 ],
+					"presentation_rect" : [ 272.400024, 130.0, 57.0, 22.0 ],
 					"style" : "",
 					"text" : "sah~ 0.5"
 				}
@@ -162,6 +139,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 180.550018, 130.0, 57.0, 22.0 ],
+					"presentation_rect" : [ 180.550018, 130.0, 57.0, 22.0 ],
 					"style" : "",
 					"text" : "sah~ 0.5"
 				}
@@ -175,6 +153,11 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 346.250031, 40.0, 37.0, 22.0 ],
+					"presentation_rect" : [ 346.250031, 40.0, 37.0, 22.0 ],
+					"saved_object_attributes" : 					{
+						"attr_comment" : ""
+					}
+,
 					"style" : "",
 					"text" : "in~ 2"
 				}
@@ -188,6 +171,11 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 254.400024, 40.0, 37.0, 22.0 ],
+					"presentation_rect" : [ 254.400024, 40.0, 37.0, 22.0 ],
+					"saved_object_attributes" : 					{
+						"attr_comment" : ""
+					}
+,
 					"style" : "",
 					"text" : "in~ 1"
 				}
@@ -196,14 +184,14 @@
  ],
 		"lines" : [ 			{
 				"patchline" : 				{
-					"destination" : [ "obj-38", 0 ],
+					"destination" : [ "obj-22", 2 ],
 					"source" : [ "obj-15", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-3", 0 ],
+					"destination" : [ "obj-22", 1 ],
 					"source" : [ "obj-17", 0 ]
 				}
 
@@ -232,22 +220,8 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-22", 1 ],
-					"source" : [ "obj-3", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-7", 0 ],
 					"source" : [ "obj-30", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-22", 2 ],
-					"source" : [ "obj-38", 0 ]
 				}
 
 			}
