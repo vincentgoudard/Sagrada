@@ -53,5 +53,10 @@
 		"categories" : "component",
 		"description" : "Decaying sinewave grains generator."
 	}
+,
+	"sagrada.busy~" : 	{
+		"categories" : "utilities",
+		"description" : "Busy state notifier for sagrada modules."
+	}
 
 }
