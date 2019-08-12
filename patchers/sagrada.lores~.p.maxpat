@@ -4,11 +4,12 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 0,
-			"revision" : 0,
+			"revision" : 6,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
+		"classnamespace" : "box",
 		"rect" : [ 611.0, 88.0, 510.0, 403.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
@@ -43,9 +44,7 @@
 					"numinlets" : 6,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 85.700012, 196.0, 150.0, 22.0 ],
-					"presentation_rect" : [ 85.700012, 196.0, 150.0, 22.0 ],
-					"style" : "",
+					"patching_rect" : [ 85.700012000000001, 196.0, 150.0, 22.0 ],
 					"text" : "biquad~ 1 -1 0 -0.99997 0."
 				}
 
@@ -57,10 +56,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 4,
 					"outlettype" : [ "", "signal", "signal", "" ],
-					"patching_rect" : [ 27.700012, 85.0, 192.0, 22.0 ],
-					"presentation_rect" : [ 27.700012, 85.0, 192.0, 22.0 ],
-					"style" : "",
-					"text" : "sagrada.iosetter~ myContext"
+					"patching_rect" : [ 27.700012000000001, 85.0, 192.0, 22.0 ],
+					"text" : "sagrada.iosetter~ #1"
 				}
 
 			}
@@ -71,9 +68,11 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 27.700012, 45.0, 30.0, 22.0 ],
-					"presentation_rect" : [ 27.700012, 45.0, 30.0, 22.0 ],
-					"style" : "",
+					"patching_rect" : [ 27.700012000000001, 45.0, 30.0, 22.0 ],
+					"saved_object_attributes" : 					{
+						"attr_comment" : ""
+					}
+,
 					"text" : "in 1"
 				}
 
@@ -84,9 +83,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 27.700012, 232.0, 195.0, 22.0 ],
-					"presentation_rect" : [ 27.700012, 232.0, 195.0, 22.0 ],
-					"style" : "",
+					"patching_rect" : [ 27.700012000000001, 232.0, 195.0, 22.0 ],
 					"text" : "sagrada.multiout~ #1"
 				}
 
@@ -97,9 +94,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 168.700012, 23.0, 43.0, 20.0 ],
-					"presentation_rect" : [ 168.700012, 23.0, 43.0, 20.0 ],
-					"style" : "",
+					"patching_rect" : [ 168.700011999999987, 23.0, 43.0, 20.0 ],
 					"text" : "Q"
 				}
 
@@ -110,9 +105,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 105.700012, 23.0, 43.0, 20.0 ],
-					"presentation_rect" : [ 105.700012, 23.0, 43.0, 20.0 ],
-					"style" : "",
+					"patching_rect" : [ 105.700012000000001, 23.0, 43.0, 20.0 ],
 					"text" : "freq"
 				}
 
@@ -124,9 +117,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 168.700012, 127.0, 57.0, 22.0 ],
-					"presentation_rect" : [ 168.700012, 127.0, 57.0, 22.0 ],
-					"style" : "",
+					"patching_rect" : [ 168.700011999999987, 127.0, 57.0, 22.0 ],
 					"text" : "sah~ 0.5"
 				}
 
@@ -138,9 +129,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 105.700012, 127.0, 57.0, 22.0 ],
-					"presentation_rect" : [ 105.700012, 127.0, 57.0, 22.0 ],
-					"style" : "",
+					"patching_rect" : [ 105.700012000000001, 127.0, 57.0, 22.0 ],
 					"text" : "sah~ 0.5"
 				}
 
@@ -152,13 +141,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 168.700012, 45.0, 37.0, 22.0 ],
-					"presentation_rect" : [ 168.700012, 45.0, 37.0, 22.0 ],
-					"saved_object_attributes" : 					{
-						"attr_comment" : ""
-					}
-,
-					"style" : "",
+					"patching_rect" : [ 168.700011999999987, 45.0, 37.0, 22.0 ],
 					"text" : "in~ 2"
 				}
 
@@ -170,13 +153,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 105.700012, 45.0, 37.0, 22.0 ],
-					"presentation_rect" : [ 105.700012, 45.0, 37.0, 22.0 ],
-					"saved_object_attributes" : 					{
-						"attr_comment" : ""
-					}
-,
-					"style" : "",
+					"patching_rect" : [ 105.700012000000001, 45.0, 37.0, 22.0 ],
 					"text" : "in~ 1"
 				}
 
@@ -188,9 +165,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 85.700012, 163.0, 145.0, 22.0 ],
-					"presentation_rect" : [ 85.700012, 163.0, 145.0, 22.0 ],
-					"style" : "",
+					"patching_rect" : [ 85.700012000000001, 163.0, 145.0, 22.0 ],
 					"text" : "gen~ @gen lores.gendsp"
 				}
 
