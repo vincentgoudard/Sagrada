@@ -58,5 +58,10 @@
 		"categories" : "utilities",
 		"description" : "Busy state notifier for sagrada modules."
 	}
+,
+	"sagrada.adsr~" : 	{
+		"categories" : "component",
+		"description" : "ADSR enveloppe generator."
+	}
 
 }

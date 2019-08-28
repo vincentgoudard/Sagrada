@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 199.0, 184.0, 806.0, 550.0 ],
+		"rect" : [ 258.0, 291.0, 806.0, 550.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -55,7 +55,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 519.0, 210.0, 864.0, 661.0 ],
+						"rect" : [ 624.0, 221.0, 864.0, 661.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -83,6 +83,28 @@
 						"style" : "",
 						"subpatcher_template" : "sagrada.lib.HelpPatcher",
 						"boxes" : [ 							{
+								"box" : 								{
+									"id" : "obj-30",
+									"maxclass" : "scope~",
+									"numinlets" : 2,
+									"numoutlets" : 0,
+									"patching_rect" : [ 487.0, 526.0, 130.0, 130.0 ]
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-13",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "signal" ],
+									"patching_rect" : [ 487.0, 495.5, 148.0, 22.0 ],
+									"text" : "receive~ layer.ctx.pan.in.1"
+								}
+
+							}
+, 							{
 								"box" : 								{
 									"id" : "obj-53",
 									"maxclass" : "newobj",
@@ -237,7 +259,6 @@
 													"numinlets" : 1,
 													"numoutlets" : 0,
 													"patching_rect" : [ 142.0, 117.0, 383.0, 33.0 ],
-													"presentation_linecount" : 2,
 													"text" : "select first part of the sample for the attack, then somewhere where the sample is stable (around 500ms for sample \"vibe-a1\") for sustain"
 												}
 
@@ -463,7 +484,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "signal", "signal" ],
 									"patching_rect" : [ 31.0, 495.5, 274.0, 22.0 ],
-									"text" : "sagrada.pan2~ layerExample.ctx @in pan.in"
+									"text" : "sagrada.pan2~ layer.ctx @in pan.in"
 								}
 
 							}
@@ -1184,13 +1205,13 @@
 									"patching_rect" : [ 31.0, 557.5, 274.0, 36.0 ],
 									"saved_attribute_attributes" : 									{
 										"valueof" : 										{
-											"parameter_mmax" : 6.0,
-											"parameter_initial" : [ 0.0 ],
 											"parameter_shortname" : "live.gain~",
 											"parameter_type" : 0,
 											"parameter_unitstyle" : 4,
 											"parameter_mmin" : -70.0,
-											"parameter_longname" : "live.gain~[1]"
+											"parameter_longname" : "live.gain~[1]",
+											"parameter_mmax" : 6.0,
+											"parameter_initial" : [ 0.0 ]
 										}
 
 									}
@@ -1366,7 +1387,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 520.0, 364.0, 127.5, 51.0 ],
-									"presentation_linecount" : 3,
 									"text" : "env. #1 on attack\nenv. #3 on release\nenv. #2 on sustain"
 								}
 
@@ -2041,7 +2061,6 @@
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 449.25, 767.0, 406.0, 38.0 ],
-													"presentation_linecount" : 2,
 													"text" : "sizeinsamps 512, fill 1, apply triangle half, apply gain -1, apply offset 1"
 												}
 
@@ -2201,7 +2220,6 @@
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 449.25, 418.0, 406.0, 38.0 ],
-													"presentation_linecount" : 2,
 													"text" : "sizeinsamps 512, fill 1, apply triangle half, apply gain -1, apply offset 1"
 												}
 
@@ -2320,7 +2338,6 @@
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 77.416672000000005, 356.0, 290.0, 38.0 ],
-													"presentation_linecount" : 2,
 													"text" : "sizeinsamps 512, fill 1, apply hamming, apply hamming"
 												}
 
@@ -2466,7 +2483,6 @@
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 62.5, 43.0, 290.0, 38.0 ],
-													"presentation_linecount" : 2,
 													"text" : "sizeinsamps 512, fill 1, apply hamming, apply hamming"
 												}
 
@@ -2731,7 +2747,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 31.0, 23.060058999999999, 824.0, 74.0 ],
-									"presentation_linecount" : 5,
 									"text" : "Here is an example of grain-layer management.\nThe object \"sagrada.multilayer\" output trigger clicks, an incrementing grainCount and a layer index.\nWe mapped the layer index on the pitch value, and mapped the grainCount to the enveloppe.\nGrainCount returns -1 for the last grain (so that we know it is the last grain)\nThe 1st grain is modulated by an expo-decay enveloppe (stored in buffer Enveloppe1) and the following grains are modulated by a hanning enveloppe. "
 								}
 
@@ -3448,6 +3463,13 @@
 							}
 , 							{
 								"patchline" : 								{
+									"destination" : [ "obj-30", 0 ],
+									"source" : [ "obj-13", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-83", 2 ],
 									"midpoints" : [ 714.5, 414.0, 662.5, 414.0 ],
 									"source" : [ "obj-14", 0 ]
@@ -3734,7 +3756,6 @@
 					}
 ,
 					"patching_rect" : [ 544.0, 106.0, 96.0, 24.0 ],
-					"presentation_linecount" : 3,
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -3770,7 +3791,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 493.5, 489.0, 73.0, 52.0 ],
-					"presentation_linecount" : 2,
 					"text" : "grainCount for layer 2"
 				}
 
@@ -3785,7 +3805,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 421.0, 489.0, 73.0, 52.0 ],
-					"presentation_linecount" : 2,
 					"text" : "grainCount for layer 1"
 				}
 
@@ -3845,7 +3864,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 327.0, 251.0, 94.0, 37.0 ],
-					"presentation_linecount" : 2,
 					"text" : "grainCounts for all layer"
 				}
 
@@ -3881,7 +3899,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 139.0, 251.0, 102.0, 37.0 ],
-					"presentation_linecount" : 2,
 					"text" : "mixed clock for all layers"
 				}
 
@@ -3907,7 +3924,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 135.0, 476.0, 59.0, 52.0 ],
-					"presentation_linecount" : 2,
 					"text" : "clock for layer 2"
 				}
 
@@ -3922,7 +3938,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 72.0, 476.0, 59.0, 52.0 ],
-					"presentation_linecount" : 2,
 					"text" : "clock for layer 1"
 				}
 
