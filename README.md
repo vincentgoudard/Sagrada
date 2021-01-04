@@ -2,7 +2,7 @@
 
 ## What??
 
-Sagrada is a draft Max library performing sample-accurate granular synthesis in a modular way.
+Sagrada is a draft Max package performing sample-accurate granular synthesis in a modular way.
 
 ## Installation
 
