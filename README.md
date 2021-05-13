@@ -1,4 +1,4 @@
-<img align="right" src="sagrada-icon.png">
+<img align="left" src="sagrada-icon.png" width="72"> 
 
 # About Sagrada
 
