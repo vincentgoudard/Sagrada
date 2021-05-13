@@ -4,7 +4,7 @@
 
 ## What??
 
-Sagrada is a draft Max package performing sample-accurate granular synthesis in a modular way.
+Sagrada is a draft Max package performing sample-accurate granular synthesis in a modular way. Grains can be triggered both synchronously and asynchronously. Each grain can have its own effects and eveloppes (for instance the first "attack" and last "release" grains of a grains stream).
 
 ## Installation
 
