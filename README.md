@@ -11,6 +11,10 @@ Sagrada is a draft Max package performing sample-accurate granular synthesis in 
 Put this folder in your Max package folder.
 Use help files.
 
+## Screnshot
+![A screenshot of the simple sagrada.play~ helper](./media/sagrada-screenshot.png)
+
+
 ## Warning
 
 This library is experimental and under construction. 
