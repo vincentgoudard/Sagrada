@@ -1,3 +1,5 @@
+![Sagrada : modular granular synthesis](sagrada-icon.png)
+
 # About Sagrada
 
 ## What??
