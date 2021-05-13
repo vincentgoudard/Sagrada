@@ -1,4 +1,4 @@
-![Sagrada : modular granular synthesis](sagrada-icon.png)
+<img align="right" src="sagrada-icon.png">
 
 # About Sagrada
 
