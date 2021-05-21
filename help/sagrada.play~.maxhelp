@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 100.0, 100.0, 805.0, 571.0 ],
+		"rect" : [ 100.0, 100.0, 805.0, 603.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -26,7 +26,7 @@
 		"toptoolbarpinned" : 2,
 		"righttoolbarpinned" : 2,
 		"bottomtoolbarpinned" : 2,
-		"toolbars_unpinned_last_save" : 0,
+		"toolbars_unpinned_last_save" : 15,
 		"tallnewobj" : 0,
 		"boxanimatetime" : 200,
 		"enablehscroll" : 1,
@@ -48,7 +48,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 225.0, 504.0, 439.0, 38.0 ],
-					"presentation_linecount" : 2,
 					"text" : "Beware that no enveloppe is applied here. Therefore the audio-clicks.\nSee sagrada.enveloppe~ for that."
 				}
 
@@ -1413,7 +1412,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 140.5, 87.0, 186.5, 77.0 ],
+									"patching_rect" : [ 140.5, 87.0, 187.0, 77.0 ],
 									"setminmax" : [ 0.0, 1.0 ],
 									"size" : 20,
 									"spacing" : 1
