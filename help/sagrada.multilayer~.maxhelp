@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 100.0, 100.0, 806.0, 550.0 ],
+		"rect" : [ 100.0, 100.0, 802.0, 571.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -26,7 +26,7 @@
 		"toptoolbarpinned" : 2,
 		"righttoolbarpinned" : 2,
 		"bottomtoolbarpinned" : 2,
-		"toolbars_unpinned_last_save" : 0,
+		"toolbars_unpinned_last_save" : 15,
 		"tallnewobj" : 0,
 		"boxanimatetime" : 200,
 		"enablehscroll" : 1,
@@ -56,7 +56,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 624.0, 221.0, 864.0, 661.0 ],
+						"rect" : [ 133.0, 135.0, 864.0, 661.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -141,7 +141,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 581.5, 132.0, 132.0, 53.0 ],
+									"patching_rect" : [ 581.5, 104.0, 133.0, 81.0 ],
 									"setminmax" : [ -12.0, 12.0 ],
 									"signed" : 1,
 									"size" : 8,
@@ -3392,8 +3392,8 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "float" ],
-									"patching_rect" : [ 308.5, 151.0, 29.5, 22.0 ],
-									"text" : "* 3."
+									"patching_rect" : [ 308.5, 151.0, 33.0, 22.0 ],
+									"text" : "* 10."
 								}
 
 							}
