@@ -369,7 +369,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 539.0, 214.0, 563.0, 607.0 ],
+						"rect" : [ 162.0, 237.0, 563.0, 607.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -398,6 +398,42 @@
 						"subpatcher_template" : "sagrada.lib.HelpPatcher",
 						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
+								"box" : 								{
+									"id" : "obj-17",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "signal" ],
+									"patching_rect" : [ 312.0, 326.0, 39.0, 22.0 ],
+									"text" : "mtof~"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-16",
+									"maxclass" : "newobj",
+									"numinlets" : 6,
+									"numoutlets" : 1,
+									"outlettype" : [ "signal" ],
+									"patching_rect" : [ 312.0, 292.0, 108.0, 22.0 ],
+									"text" : "scale~ -1 1 90 120"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-7",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "signal" ],
+									"patching_rect" : [ 312.0, 259.0, 56.0, 22.0 ],
+									"text" : "rand~ 30"
+								}
+
+							}
+, 							{
 								"box" : 								{
 									"id" : "obj-34",
 									"maxclass" : "number",
@@ -532,31 +568,6 @@
 									"outlettype" : [ "", "bang" ],
 									"parameter_enable" : 0,
 									"patching_rect" : [ 166.0, 309.0, 50.0, 22.0 ]
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"format" : 6,
-									"id" : "obj-11",
-									"maxclass" : "flonum",
-									"numinlets" : 1,
-									"numoutlets" : 2,
-									"outlettype" : [ "", "bang" ],
-									"parameter_enable" : 0,
-									"patching_rect" : [ 304.0, 306.0, 50.0, 22.0 ]
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-5",
-									"maxclass" : "newobj",
-									"numinlets" : 1,
-									"numoutlets" : 1,
-									"outlettype" : [ "signal" ],
-									"patching_rect" : [ 304.0, 333.0, 61.0, 22.0 ],
-									"text" : "sig~ 2000"
 								}
 
 							}
@@ -999,7 +1010,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "multichannelsignal" ],
 									"patching_rect" : [ 19.0, 208.0, 286.0, 22.0 ],
-									"text" : "mc.sagrada.trigger~ 128 /myBusyContext @steal 1"
+									"text" : "mc.sagrada.trigger~ 16 /myBusyContext @steal 1"
 								}
 
 							}
@@ -1051,15 +1062,22 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-5", 0 ],
-									"source" : [ "obj-11", 0 ]
+									"destination" : [ "obj-17", 0 ],
+									"source" : [ "obj-16", 0 ]
 								}
 
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-32", 1 ],
-									"midpoints" : [ 28.5, 393.5, 257.5, 393.5 ],
+									"destination" : [ "obj-23", 2 ],
+									"source" : [ "obj-17", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-32", 2 ],
+									"midpoints" : [ 28.5, 393.5, 310.0, 393.5 ],
 									"order" : 0,
 									"source" : [ "obj-23", 0 ]
 								}
@@ -1110,15 +1128,15 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-23", 2 ],
-									"source" : [ "obj-5", 0 ]
+									"destination" : [ "obj-1", 0 ],
+									"source" : [ "obj-6", 0 ]
 								}
 
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-1", 0 ],
-									"source" : [ "obj-6", 0 ]
+									"destination" : [ "obj-16", 0 ],
+									"source" : [ "obj-7", 0 ]
 								}
 
 							}
@@ -2078,6 +2096,7 @@
 					"enablevscroll" : 0,
 					"id" : "obj-5",
 					"lockeddragscroll" : 0,
+					"lockedsize" : 0,
 					"maxclass" : "bpatcher",
 					"name" : "sagrada.helpheader.maxpat",
 					"numinlets" : 1,
@@ -2282,6 +2301,13 @@
 				"implicit" : 1
 			}
 , 			{
+				"name" : "mc.sagrada.decaysine~.p.maxpat",
+				"bootpath" : "~/Documents/Max 7/Packages/Sagrada/patchers",
+				"patcherrelativepath" : "../patchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "sagrada.paramhandler.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/Sagrada/patchers",
 				"patcherrelativepath" : "../patchers",
@@ -2290,6 +2316,20 @@
 			}
 , 			{
 				"name" : "mc.sagrada.busy~.maxpat",
+				"bootpath" : "~/Documents/Max 7/Packages/Sagrada/patchers",
+				"patcherrelativepath" : "../patchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "mc.sagrada.busy~.p.maxpat",
+				"bootpath" : "~/Documents/Max 7/Packages/Sagrada/patchers",
+				"patcherrelativepath" : "../patchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "sagrada.busy.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/Sagrada/patchers",
 				"patcherrelativepath" : "../patchers",
 				"type" : "JSON",
