@@ -4,13 +4,13 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 2,
-			"revision" : 0,
+			"revision" : 2,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 100.0, 100.0, 811.0, 638.0 ],
+		"rect" : [ 100.0, 100.0, 861.0, 711.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -40,12 +40,24 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-19",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "multichannelsignal" ],
+					"patching_rect" : [ 103.0, 264.0, 180.0, 22.0 ],
+					"text" : "sagrada.ck.receive~ /myContext"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-3",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 4,
 					"outlettype" : [ "signal", "signal", "signal", "signal" ],
-					"patching_rect" : [ 18.0, 237.0, 100.0, 22.0 ],
+					"patching_rect" : [ 103.0, 294.0, 100.0, 22.0 ],
 					"text" : "mc.unpack~ 4"
 				}
 
@@ -62,7 +74,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 2,
-							"revision" : 0,
+							"revision" : 2,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -208,7 +220,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 218.0, 170.0, 83.0, 22.0 ],
+					"patching_rect" : [ 154.0, 155.5, 83.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -232,7 +244,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 2,
-							"revision" : 0,
+							"revision" : 2,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -339,7 +351,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 18.0, 179.0, 53.0, 22.0 ],
+					"patching_rect" : [ 274.0, 179.0, 53.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -363,13 +375,13 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 2,
-							"revision" : 0,
+							"revision" : 2,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 162.0, 237.0, 563.0, 607.0 ],
+						"rect" : [ 458.0, 325.0, 635.0, 599.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -397,7 +409,166 @@
 						"style" : "",
 						"subpatcher_template" : "sagrada.lib.HelpPatcher",
 						"assistshowspatchername" : 0,
+						"visible" : 1,
 						"boxes" : [ 							{
+								"box" : 								{
+									"id" : "obj-29",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "multichannelsignal" ],
+									"patcher" : 									{
+										"fileversion" : 1,
+										"appversion" : 										{
+											"major" : 8,
+											"minor" : 2,
+											"revision" : 2,
+											"architecture" : "x64",
+											"modernui" : 1
+										}
+,
+										"classnamespace" : "box",
+										"rect" : [ 84.0, 131.0, 640.0, 480.0 ],
+										"bglocked" : 0,
+										"openinpresentation" : 0,
+										"default_fontsize" : 12.0,
+										"default_fontface" : 0,
+										"default_fontname" : "Arial",
+										"gridonopen" : 1,
+										"gridsize" : [ 15.0, 15.0 ],
+										"gridsnaponopen" : 1,
+										"objectsnaponopen" : 1,
+										"statusbarvisible" : 2,
+										"toolbarvisible" : 1,
+										"lefttoolbarpinned" : 0,
+										"toptoolbarpinned" : 0,
+										"righttoolbarpinned" : 0,
+										"bottomtoolbarpinned" : 0,
+										"toolbars_unpinned_last_save" : 0,
+										"tallnewobj" : 0,
+										"boxanimatetime" : 200,
+										"enablehscroll" : 1,
+										"enablevscroll" : 1,
+										"devicewidth" : 0.0,
+										"description" : "",
+										"digest" : "",
+										"tags" : "",
+										"style" : "",
+										"subpatcher_template" : "sagrada.lib.HelpPatcher",
+										"assistshowspatchername" : 0,
+										"boxes" : [ 											{
+												"box" : 												{
+													"id" : "obj-26",
+													"maxclass" : "newobj",
+													"numinlets" : 1,
+													"numoutlets" : 1,
+													"outlettype" : [ "multichannelsignal" ],
+													"patching_rect" : [ 50.0, 100.0, 54.0, 22.0 ],
+													"text" : "mc.abs~"
+												}
+
+											}
+, 											{
+												"box" : 												{
+													"id" : "obj-5",
+													"maxclass" : "newobj",
+													"numinlets" : 3,
+													"numoutlets" : 1,
+													"outlettype" : [ "multichannelsignal" ],
+													"patching_rect" : [ 50.0, 129.0, 80.0, 22.0 ],
+													"text" : "mc.slide~ 0 2"
+												}
+
+											}
+, 											{
+												"box" : 												{
+													"comment" : "",
+													"id" : "obj-27",
+													"index" : 1,
+													"maxclass" : "inlet",
+													"numinlets" : 0,
+													"numoutlets" : 1,
+													"outlettype" : [ "multichannelsignal" ],
+													"patching_rect" : [ 50.0, 40.0, 30.0, 30.0 ]
+												}
+
+											}
+, 											{
+												"box" : 												{
+													"comment" : "",
+													"id" : "obj-28",
+													"index" : 1,
+													"maxclass" : "outlet",
+													"numinlets" : 1,
+													"numoutlets" : 0,
+													"patching_rect" : [ 50.0, 211.0, 30.0, 30.0 ]
+												}
+
+											}
+ ],
+										"lines" : [ 											{
+												"patchline" : 												{
+													"destination" : [ "obj-5", 0 ],
+													"source" : [ "obj-26", 0 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"destination" : [ "obj-26", 0 ],
+													"source" : [ "obj-27", 0 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"destination" : [ "obj-28", 0 ],
+													"source" : [ "obj-5", 0 ]
+												}
+
+											}
+ ]
+									}
+,
+									"patching_rect" : [ 195.5, 525.0, 67.0, 22.0 ],
+									"saved_object_attributes" : 									{
+										"description" : "",
+										"digest" : "",
+										"globalpatchername" : "",
+										"tags" : ""
+									}
+,
+									"text" : "p envelope"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"format" : 6,
+									"id" : "obj-19",
+									"maxclass" : "flonum",
+									"numinlets" : 1,
+									"numoutlets" : 2,
+									"outlettype" : [ "", "bang" ],
+									"parameter_enable" : 0,
+									"patching_rect" : [ 375.0, 250.0, 50.0, 22.0 ]
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"format" : 6,
+									"id" : "obj-11",
+									"maxclass" : "flonum",
+									"numinlets" : 1,
+									"numoutlets" : 2,
+									"outlettype" : [ "", "bang" ],
+									"parameter_enable" : 0,
+									"patching_rect" : [ 433.0, 242.0, 50.0, 22.0 ]
+								}
+
+							}
+, 							{
 								"box" : 								{
 									"id" : "obj-17",
 									"maxclass" : "newobj",
@@ -416,8 +587,8 @@
 									"numinlets" : 6,
 									"numoutlets" : 1,
 									"outlettype" : [ "signal" ],
-									"patching_rect" : [ 312.0, 292.0, 108.0, 22.0 ],
-									"text" : "scale~ -1 1 90 120"
+									"patching_rect" : [ 312.0, 292.0, 101.0, 22.0 ],
+									"text" : "scale~ -1 1 40 60"
 								}
 
 							}
@@ -474,9 +645,9 @@
 									"color" : [ 0.702269, 0.811747, 0.303388, 1.0 ],
 									"id" : "obj-12",
 									"maxclass" : "newobj",
-									"numinlets" : 1,
+									"numinlets" : 2,
 									"numoutlets" : 0,
-									"patching_rect" : [ 195.5, 539.0, 198.0, 22.0 ],
+									"patching_rect" : [ 195.5, 552.0, 198.0, 22.0 ],
 									"text" : "mc.sagrada.busy~ /myBusyContext"
 								}
 
@@ -548,12 +719,11 @@
 , 							{
 								"box" : 								{
 									"bubble" : 1,
-									"bubbleside" : 3,
 									"id" : "obj-15",
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 63.5, 309.0, 109.0, 24.0 ],
+									"patching_rect" : [ 88.5, 326.0, 109.0, 24.0 ],
 									"text" : "decay rate (ms)"
 								}
 
@@ -567,7 +737,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "", "bang" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 166.0, 309.0, 50.0, 22.0 ]
+									"patching_rect" : [ 19.0, 302.0, 62.0, 22.0 ]
 								}
 
 							}
@@ -578,7 +748,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "signal" ],
-									"patching_rect" : [ 166.0, 333.0, 61.0, 22.0 ],
+									"patching_rect" : [ 19.0, 326.0, 61.0, 22.0 ],
 									"text" : "sig~ 1000"
 								}
 
@@ -594,7 +764,7 @@
 										"appversion" : 										{
 											"major" : 8,
 											"minor" : 2,
-											"revision" : 0,
+											"revision" : 2,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -760,7 +930,7 @@
 									"color" : [ 0.702269, 0.811747, 0.303388, 1.0 ],
 									"id" : "obj-23",
 									"maxclass" : "newobj",
-									"numinlets" : 3,
+									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "multichannelsignal" ],
 									"patching_rect" : [ 19.0, 360.0, 304.0, 22.0 ],
@@ -771,24 +941,11 @@
 , 							{
 								"box" : 								{
 									"bubble" : 1,
-									"bubbleside" : 3,
-									"id" : "obj-14",
-									"maxclass" : "comment",
-									"numinlets" : 1,
-									"numoutlets" : 0,
-									"patching_rect" : [ 201.0, 140.0, 85.875, 24.0 ],
-									"text" : "one grain"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"bubble" : 1,
 									"id" : "obj-13",
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 388.0, 141.0, 117.875, 24.0 ],
+									"patching_rect" : [ 121.0, 141.0, 117.875, 24.0 ],
 									"text" : "grain frequency"
 								}
 
@@ -805,7 +962,7 @@
 										"appversion" : 										{
 											"major" : 8,
 											"minor" : 2,
-											"revision" : 0,
+											"revision" : 2,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -951,7 +1108,7 @@
  ]
 									}
 ,
-									"patching_rect" : [ 337.0, 169.0, 83.0, 22.0 ],
+									"patching_rect" : [ 70.0, 169.0, 83.0, 22.0 ],
 									"saved_object_attributes" : 									{
 										"description" : "",
 										"digest" : "",
@@ -973,7 +1130,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "", "bang" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 337.0, 141.0, 50.0, 22.0 ]
+									"patching_rect" : [ 70.0, 141.0, 50.0, 22.0 ]
 								}
 
 							}
@@ -985,7 +1142,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "bang" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 286.0, 140.0, 24.0, 24.0 ]
+									"patching_rect" : [ 19.0, 140.0, 24.0, 24.0 ]
 								}
 
 							}
@@ -996,7 +1153,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "signal" ],
-									"patching_rect" : [ 286.0, 169.0, 41.0, 22.0 ],
+									"patching_rect" : [ 19.0, 169.0, 41.0, 22.0 ],
 									"text" : "click~"
 								}
 
@@ -1007,10 +1164,9 @@
 									"id" : "obj-78",
 									"maxclass" : "newobj",
 									"numinlets" : 2,
-									"numoutlets" : 1,
-									"outlettype" : [ "multichannelsignal" ],
-									"patching_rect" : [ 19.0, 208.0, 286.0, 22.0 ],
-									"text" : "mc.sagrada.trigger~ 16 /myBusyContext @steal 1"
+									"numoutlets" : 0,
+									"patching_rect" : [ 19.0, 208.0, 267.0, 22.0 ],
+									"text" : "mc.sagrada.trigger~ 4 /myBusyContext @steal 1"
 								}
 
 							}
@@ -1036,7 +1192,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "int" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 19.0, 140.0, 24.0, 24.0 ]
+									"patching_rect" : [ 286.0, 147.0, 24.0, 24.0 ]
 								}
 
 							}
@@ -1047,7 +1203,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 19.0, 171.0, 53.0, 22.0 ],
+									"patching_rect" : [ 286.0, 178.0, 53.0, 22.0 ],
 									"text" : "steal $1"
 								}
 
@@ -1055,8 +1211,15 @@
  ],
 						"lines" : [ 							{
 								"patchline" : 								{
-									"destination" : [ "obj-78", 0 ],
+									"destination" : [ "obj-78", 1 ],
 									"source" : [ "obj-1", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-16", 4 ],
+									"source" : [ "obj-11", 0 ]
 								}
 
 							}
@@ -1069,8 +1232,15 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-23", 2 ],
+									"destination" : [ "obj-23", 1 ],
 									"source" : [ "obj-17", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-16", 3 ],
+									"source" : [ "obj-19", 0 ]
 								}
 
 							}
@@ -1093,14 +1263,21 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-23", 1 ],
+									"destination" : [ "obj-12", 0 ],
+									"source" : [ "obj-29", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-23", 0 ],
 									"source" : [ "obj-3", 0 ]
 								}
 
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-12", 0 ],
+									"destination" : [ "obj-29", 0 ],
 									"source" : [ "obj-32", 0 ]
 								}
 
@@ -1121,7 +1298,7 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-78", 1 ],
+									"destination" : [ "obj-78", 0 ],
 									"source" : [ "obj-48", 0 ]
 								}
 
@@ -1142,22 +1319,6 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-23", 0 ],
-									"order" : 1,
-									"source" : [ "obj-78", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-32", 1 ],
-									"order" : 0,
-									"source" : [ "obj-78", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
 									"destination" : [ "obj-4", 0 ],
 									"source" : [ "obj-8", 0 ]
 								}
@@ -1172,7 +1333,7 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-78", 1 ],
+									"destination" : [ "obj-78", 0 ],
 									"source" : [ "obj-85", 0 ]
 								}
 
@@ -1219,7 +1380,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 2,
-							"revision" : 0,
+							"revision" : 2,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -1374,7 +1535,7 @@
 						"bgcolor" : [ 0.9, 0.91, 0.91, 1.0 ]
 					}
 ,
-					"patching_rect" : [ 99.0, 537.0, 44.0, 22.0 ],
+					"patching_rect" : [ 184.0, 594.0, 44.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -1398,7 +1559,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 2,
-							"revision" : 0,
+							"revision" : 2,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -1553,7 +1714,7 @@
 						"bgcolor" : [ 0.9, 0.91, 0.91, 1.0 ]
 					}
 ,
-					"patching_rect" : [ 72.0, 447.0, 44.0, 22.0 ],
+					"patching_rect" : [ 157.0, 504.0, 44.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -1577,7 +1738,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 2,
-							"revision" : 0,
+							"revision" : 2,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -1732,7 +1893,7 @@
 						"bgcolor" : [ 0.9, 0.91, 0.91, 1.0 ]
 					}
 ,
-					"patching_rect" : [ 45.0, 358.0, 44.0, 22.0 ],
+					"patching_rect" : [ 130.0, 415.0, 44.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -1756,7 +1917,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 2,
-							"revision" : 0,
+							"revision" : 2,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -1911,7 +2072,7 @@
 						"bgcolor" : [ 0.9, 0.91, 0.91, 1.0 ]
 					}
 ,
-					"patching_rect" : [ 18.0, 268.0, 44.0, 22.0 ],
+					"patching_rect" : [ 103.0, 325.0, 44.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -1931,7 +2092,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 247.5, 208.0, 281.0, 33.0 ],
+					"patching_rect" : [ 302.0, 205.0, 281.0, 33.0 ],
 					"text" : "arguments : nb of voices (default 1), context name\nattributes : steal (default 0)"
 				}
 
@@ -1944,7 +2105,7 @@
 					"maxclass" : "scope~",
 					"numinlets" : 2,
 					"numoutlets" : 0,
-					"patching_rect" : [ 99.0, 561.0, 709.0, 62.0 ],
+					"patching_rect" : [ 184.0, 618.0, 571.0, 60.0 ],
 					"range" : [ -1.0, 2.0 ]
 				}
 
@@ -1957,7 +2118,7 @@
 					"maxclass" : "scope~",
 					"numinlets" : 2,
 					"numoutlets" : 0,
-					"patching_rect" : [ 72.0, 471.0, 709.0, 62.0 ],
+					"patching_rect" : [ 157.0, 528.0, 571.0, 60.0 ],
 					"range" : [ -1.0, 2.0 ]
 				}
 
@@ -1970,7 +2131,7 @@
 					"maxclass" : "scope~",
 					"numinlets" : 2,
 					"numoutlets" : 0,
-					"patching_rect" : [ 45.0, 382.0, 709.0, 62.0 ],
+					"patching_rect" : [ 130.0, 439.0, 571.0, 60.0 ],
 					"range" : [ -1.0, 2.0 ]
 				}
 
@@ -1994,7 +2155,7 @@
 					"maxclass" : "scope~",
 					"numinlets" : 2,
 					"numoutlets" : 0,
-					"patching_rect" : [ 18.0, 294.0, 709.0, 62.0 ],
+					"patching_rect" : [ 103.0, 351.0, 571.0, 60.0 ],
 					"range" : [ -1.0, 2.0 ]
 				}
 
@@ -2007,7 +2168,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 82.0, 141.0, 85.875, 24.0 ],
+					"patching_rect" : [ 18.0, 126.5, 85.875, 24.0 ],
 					"text" : "one grain"
 				}
 
@@ -2019,7 +2180,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 269.0, 142.0, 117.875, 24.0 ],
+					"patching_rect" : [ 205.0, 127.5, 117.875, 24.0 ],
 					"text" : "grain frequency"
 				}
 
@@ -2031,7 +2192,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 218.0, 110.0, 72.0, 22.0 ],
+					"patching_rect" : [ 154.0, 95.5, 72.0, 22.0 ],
 					"text" : "loadmess 7"
 				}
 
@@ -2046,7 +2207,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 218.0, 142.0, 50.0, 22.0 ]
+					"patching_rect" : [ 154.0, 127.5, 50.0, 22.0 ]
 				}
 
 			}
@@ -2058,7 +2219,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 167.0, 141.0, 24.0, 24.0 ]
+					"patching_rect" : [ 103.0, 126.5, 24.0, 24.0 ]
 				}
 
 			}
@@ -2069,7 +2230,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 167.0, 170.0, 41.0, 22.0 ],
+					"patching_rect" : [ 103.0, 155.5, 41.0, 22.0 ],
 					"text" : "click~"
 				}
 
@@ -2079,9 +2240,8 @@
 					"id" : "obj-78",
 					"maxclass" : "newobj",
 					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "multichannelsignal" ],
-					"patching_rect" : [ 18.0, 208.0, 190.0, 22.0 ],
+					"numoutlets" : 0,
+					"patching_rect" : [ 103.0, 205.0, 190.0, 22.0 ],
 					"text" : "mc.sagrada.trigger~ 4 /myContext"
 				}
 
@@ -2137,8 +2297,15 @@
  ],
 		"lines" : [ 			{
 				"patchline" : 				{
-					"destination" : [ "obj-78", 0 ],
+					"destination" : [ "obj-78", 1 ],
 					"source" : [ "obj-12", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-3", 0 ],
+					"source" : [ "obj-19", 0 ]
 				}
 
 			}
@@ -2215,15 +2382,8 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-78", 1 ],
+					"destination" : [ "obj-78", 0 ],
 					"source" : [ "obj-48", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-3", 0 ],
-					"source" : [ "obj-78", 0 ]
 				}
 
 			}
@@ -2236,7 +2396,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-78", 1 ],
+					"destination" : [ "obj-78", 0 ],
 					"source" : [ "obj-85", 0 ]
 				}
 
@@ -2259,35 +2419,14 @@
 		}
 ,
 		"dependency_cache" : [ 			{
-				"name" : "sagrada.helpheader.maxpat",
+				"name" : "mc.sagrada.busy~.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/Sagrada/patchers",
 				"patcherrelativepath" : "../patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "sagrada-icon.png",
-				"bootpath" : "~/Documents/Max 7/Packages/Sagrada",
-				"patcherrelativepath" : "..",
-				"type" : "PNG",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "mc.sagrada.trigger~.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/Sagrada/patchers",
-				"patcherrelativepath" : "../patchers",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "sagrada.voicerouter.gendsp",
-				"bootpath" : "~/Documents/Max 7/Packages/Sagrada/patchers",
-				"patcherrelativepath" : "../patchers",
-				"type" : "gDSP",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "mc.sagrada.trigger~.p.maxpat",
+				"name" : "mc.sagrada.busy~.p.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/Sagrada/patchers",
 				"patcherrelativepath" : "../patchers",
 				"type" : "JSON",
@@ -2308,24 +2447,17 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "sagrada.paramhandler.maxpat",
+				"name" : "mc.sagrada.trigger~.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/Sagrada/patchers",
 				"patcherrelativepath" : "../patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "mc.sagrada.busy~.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/Sagrada/patchers",
-				"patcherrelativepath" : "../patchers",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "mc.sagrada.busy~.p.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/Sagrada/patchers",
-				"patcherrelativepath" : "../patchers",
-				"type" : "JSON",
+				"name" : "sagrada-icon.png",
+				"bootpath" : "~/Documents/Max 7/Packages/Sagrada",
+				"patcherrelativepath" : "..",
+				"type" : "PNG",
 				"implicit" : 1
 			}
 , 			{
@@ -2333,6 +2465,48 @@
 				"bootpath" : "~/Documents/Max 7/Packages/Sagrada/patchers",
 				"patcherrelativepath" : "../patchers",
 				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "sagrada.ck.receive~.maxpat",
+				"bootpath" : "~/Documents/Max 7/Packages/Sagrada/help",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "sagrada.helpheader.maxpat",
+				"bootpath" : "~/Documents/Max 7/Packages/Sagrada/patchers",
+				"patcherrelativepath" : "../patchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "sagrada.mc.receive~.p.maxpat",
+				"bootpath" : "~/Documents/Max 7/Packages/Sagrada/help",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "sagrada.paramhandler.maxpat",
+				"bootpath" : "~/Documents/Max 7/Packages/Sagrada/patchers",
+				"patcherrelativepath" : "../patchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "sagrada.trigger~.p.maxpat",
+				"bootpath" : "~/Documents/Max 7/Packages/Sagrada/patchers",
+				"patcherrelativepath" : "../patchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "sagrada.voicerouter.gendsp",
+				"bootpath" : "~/Documents/Max 7/Packages/Sagrada/patchers",
+				"patcherrelativepath" : "../patchers",
+				"type" : "gDSP",
 				"implicit" : 1
 			}
  ],

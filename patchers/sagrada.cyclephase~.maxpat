@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 729.0, 170.0, 621.0, 248.0 ],
+		"rect" : [ 201.0, 732.0, 621.0, 273.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -40,6 +40,18 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-4",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "signal" ],
+					"patching_rect" : [ 496.0, 148.0, 52.0, 22.0 ],
+					"text" : "phasor~"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"comment" : "pitch (signal)",
 					"id" : "obj-1",
 					"index" : 3,
@@ -47,7 +59,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 522.846527000000037, 73.0, 30.0, 30.0 ]
+					"patching_rect" : [ 355.5, 73.0, 30.0, 30.0 ]
 				}
 
 			}
@@ -243,10 +255,10 @@
 				"box" : 				{
 					"id" : "obj-78",
 					"maxclass" : "newobj",
-					"numinlets" : 2,
+					"numinlets" : 3,
 					"numoutlets" : 0,
-					"patching_rect" : [ 215.0, 131.0, 330.693054000000018, 22.0 ],
-					"text" : "poly~ sagrada.cycle~.p 1 @args #1 @parallel 1"
+					"patching_rect" : [ 215.0, 183.0, 300.0, 22.0 ],
+					"text" : "poly~ sagrada.cyclephase~.p 1 @args #1 @parallel 1"
 				}
 
 			}
@@ -266,7 +278,16 @@
  ],
 		"lines" : [ 			{
 				"patchline" : 				{
+					"destination" : [ "obj-4", 0 ],
+					"order" : 0,
+					"source" : [ "obj-1", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-78", 1 ],
+					"order" : 1,
 					"source" : [ "obj-1", 0 ]
 				}
 
@@ -282,6 +303,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-5", 0 ],
 					"source" : [ "obj-3", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-78", 2 ],
+					"source" : [ "obj-4", 0 ]
 				}
 
 			}
