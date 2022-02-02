@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml-stylesheet href="./_c74_ref.xsl" type="text/xsl"?>
+
+<!--MEMO-->
+<!-- <m> initwith </m> : references a message -->
+<!-- <o> loadbang </o> : references an object -->
+<!-- <i> aim.overview.maxpat </i> : references a patcher -->
+<!-- <at>default</at> : references an attribute -->
+
+<c74object name="sagrada.trigger~" module="aim" kind="patcher" category="component">
+
+	<digest>
+		The Sagrada objects' clock.
+	</digest>
+	
+	<description>
+		<o>sagrada.trigger~</o> distributes clock ticks on dedicated audio stream, in a round-robin way.
+	</description>
+	
+	<!--METADATA-->
+	<metadatalist>
+		<metadata name="author">Vincent Goudard</metadata>
+		<metadata name="tag">AIM</metadata>
+		<metadata name="tag">mapping</metadata>
+		<metadata name="aim-type">component</metadata>
+	</metadatalist>
+	
+	<!--INLETS-->
+	<inletlist>
+		<inlet id="0" type="signal">
+			<digest>Click trigger</digest>
+		</inlet>
+		<inlet id="1" type="signal">
+			<digest>Settings</digest>
+		</inlet>
+	</inletlist>
+
+	<!--OUTLETS-->
+	<outletlist>
+		<outlet id="0" type="signal">
+			<digest>clock signal</digest>
+		</outlet>
+	</outletlist>
+	
+	<!--ARGUMENTS-->
+	<objarglist>
+	</objarglist>
+	
+	<!--MESSAGES-->
+	<methodlist>
+	</methodlist>
+	
+	<!--SEEALSO-->
+	<seealsolist>
+		<seealso name="sagrada.play~"/>
+	</seealsolist>
+</c74object>
