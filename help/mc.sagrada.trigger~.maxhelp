@@ -40,6 +40,30 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-11",
+					"maxclass" : "button",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 30.0, 118.0, 24.0, 24.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-9",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "multichannelsignal" ],
+					"patching_rect" : [ 30.0, 170.0, 116.0, 22.0 ],
+					"text" : "mc.click~ @chans 4"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-19",
 					"maxclass" : "newobj",
 					"numinlets" : 0,
@@ -220,7 +244,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 154.0, 155.5, 83.0, 22.0 ],
+					"patching_rect" : [ 239.5, 151.5, 83.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -381,7 +405,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 458.0, 325.0, 635.0, 599.0 ],
+						"rect" : [ 101.0, 306.0, 1142.0, 599.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -411,6 +435,40 @@
 						"assistshowspatchername" : 0,
 						"visible" : 1,
 						"boxes" : [ 							{
+								"box" : 								{
+									"id" : "obj-20",
+									"maxclass" : "scope~",
+									"numinlets" : 2,
+									"numoutlets" : 0,
+									"patching_rect" : [ 469.0, 385.0, 130.0, 130.0 ]
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-5",
+									"maxclass" : "button",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "bang" ],
+									"parameter_enable" : 0,
+									"patching_rect" : [ 19.0, 65.0, 24.0, 24.0 ]
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-14",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "multichannelsignal" ],
+									"patching_rect" : [ 19.0, 117.0, 116.0, 22.0 ],
+									"text" : "mc.click~ @chans 4"
+								}
+
+							}
+, 							{
 								"box" : 								{
 									"id" : "obj-29",
 									"maxclass" : "newobj",
@@ -588,7 +646,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "signal" ],
 									"patching_rect" : [ 312.0, 292.0, 101.0, 22.0 ],
-									"text" : "scale~ -1 1 40 60"
+									"text" : "scale~ -1 1 60 80"
 								}
 
 							}
@@ -945,7 +1003,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 121.0, 141.0, 117.875, 24.0 ],
+									"patching_rect" : [ 190.5, 141.0, 108.0, 24.0 ],
 									"text" : "grain frequency"
 								}
 
@@ -1108,7 +1166,7 @@
  ]
 									}
 ,
-									"patching_rect" : [ 70.0, 169.0, 83.0, 22.0 ],
+									"patching_rect" : [ 139.5, 169.0, 83.0, 22.0 ],
 									"saved_object_attributes" : 									{
 										"description" : "",
 										"digest" : "",
@@ -1130,7 +1188,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "", "bang" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 70.0, 141.0, 50.0, 22.0 ]
+									"patching_rect" : [ 139.5, 141.0, 50.0, 22.0 ]
 								}
 
 							}
@@ -1142,7 +1200,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "bang" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 19.0, 140.0, 24.0, 24.0 ]
+									"patching_rect" : [ 88.5, 140.0, 24.0, 24.0 ]
 								}
 
 							}
@@ -1153,7 +1211,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "signal" ],
-									"patching_rect" : [ 19.0, 169.0, 41.0, 22.0 ],
+									"patching_rect" : [ 88.5, 169.0, 41.0, 22.0 ],
 									"text" : "click~"
 								}
 
@@ -1163,7 +1221,7 @@
 									"color" : [ 0.702269, 0.811747, 0.303388, 1.0 ],
 									"id" : "obj-78",
 									"maxclass" : "newobj",
-									"numinlets" : 2,
+									"numinlets" : 3,
 									"numoutlets" : 0,
 									"patching_rect" : [ 19.0, 208.0, 267.0, 22.0 ],
 									"text" : "mc.sagrada.trigger~ 4 /myBusyContext @steal 1"
@@ -1211,7 +1269,7 @@
  ],
 						"lines" : [ 							{
 								"patchline" : 								{
-									"destination" : [ "obj-78", 1 ],
+									"destination" : [ "obj-78", 2 ],
 									"source" : [ "obj-1", 0 ]
 								}
 
@@ -1220,6 +1278,13 @@
 								"patchline" : 								{
 									"destination" : [ "obj-16", 4 ],
 									"source" : [ "obj-11", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-78", 0 ],
+									"source" : [ "obj-14", 0 ]
 								}
 
 							}
@@ -1246,8 +1311,7 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-32", 2 ],
-									"midpoints" : [ 28.5, 393.5, 310.0, 393.5 ],
+									"destination" : [ "obj-20", 0 ],
 									"order" : 0,
 									"source" : [ "obj-23", 0 ]
 								}
@@ -1255,8 +1319,17 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-8", 0 ],
+									"destination" : [ "obj-32", 2 ],
+									"midpoints" : [ 28.5, 393.5, 310.0, 393.5 ],
 									"order" : 1,
+									"source" : [ "obj-23", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-8", 0 ],
+									"order" : 2,
 									"source" : [ "obj-23", 0 ]
 								}
 
@@ -1298,8 +1371,15 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-78", 0 ],
+									"destination" : [ "obj-78", 1 ],
 									"source" : [ "obj-48", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-14", 0 ],
+									"source" : [ "obj-5", 0 ]
 								}
 
 							}
@@ -1333,7 +1413,7 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-78", 0 ],
+									"destination" : [ "obj-78", 1 ],
 									"source" : [ "obj-85", 0 ]
 								}
 
@@ -2168,7 +2248,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 18.0, 126.5, 85.875, 24.0 ],
+					"patching_rect" : [ 103.5, 122.5, 85.875, 24.0 ],
 					"text" : "one grain"
 				}
 
@@ -2180,7 +2260,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 205.0, 127.5, 117.875, 24.0 ],
+					"patching_rect" : [ 290.5, 123.5, 117.875, 24.0 ],
 					"text" : "grain frequency"
 				}
 
@@ -2192,7 +2272,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 154.0, 95.5, 72.0, 22.0 ],
+					"patching_rect" : [ 239.5, 91.5, 72.0, 22.0 ],
 					"text" : "loadmess 7"
 				}
 
@@ -2207,7 +2287,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 154.0, 127.5, 50.0, 22.0 ]
+					"patching_rect" : [ 239.5, 123.5, 50.0, 22.0 ]
 				}
 
 			}
@@ -2219,7 +2299,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 103.0, 126.5, 24.0, 24.0 ]
+					"patching_rect" : [ 188.5, 122.5, 24.0, 24.0 ]
 				}
 
 			}
@@ -2230,7 +2310,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 103.0, 155.5, 41.0, 22.0 ],
+					"patching_rect" : [ 188.5, 151.5, 41.0, 22.0 ],
 					"text" : "click~"
 				}
 
@@ -2239,7 +2319,7 @@
 				"box" : 				{
 					"id" : "obj-78",
 					"maxclass" : "newobj",
-					"numinlets" : 2,
+					"numinlets" : 3,
 					"numoutlets" : 0,
 					"patching_rect" : [ 103.0, 205.0, 190.0, 22.0 ],
 					"text" : "mc.sagrada.trigger~ 4 /myContext"
@@ -2297,7 +2377,14 @@
  ],
 		"lines" : [ 			{
 				"patchline" : 				{
-					"destination" : [ "obj-78", 1 ],
+					"destination" : [ "obj-9", 0 ],
+					"source" : [ "obj-11", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-78", 2 ],
 					"source" : [ "obj-12", 0 ]
 				}
 
@@ -2382,7 +2469,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-78", 0 ],
+					"destination" : [ "obj-78", 1 ],
 					"source" : [ "obj-48", 0 ]
 				}
 
@@ -2396,8 +2483,15 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-78", 0 ],
+					"destination" : [ "obj-78", 1 ],
 					"source" : [ "obj-85", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-78", 0 ],
+					"source" : [ "obj-9", 0 ]
 				}
 
 			}
@@ -2419,14 +2513,14 @@
 		}
 ,
 		"dependency_cache" : [ 			{
-				"name" : "mc.sagrada.busy~.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/Sagrada/patchers",
-				"patcherrelativepath" : "../patchers",
+				"name" : "aim.mc.send~.p.maxpat",
+				"bootpath" : "~/Documents/Max 8/Packages/AIM/patchers/lib",
+				"patcherrelativepath" : "../../AIM/patchers/lib",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "mc.sagrada.busy~.p.maxpat",
+				"name" : "mc.sagrada.busy~.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/Sagrada/patchers",
 				"patcherrelativepath" : "../patchers",
 				"type" : "JSON",
@@ -2461,13 +2555,6 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "sagrada.busy.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/Sagrada/patchers",
-				"patcherrelativepath" : "../patchers",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "sagrada.ck.receive~.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/Sagrada/help",
 				"patcherrelativepath" : ".",
@@ -2482,9 +2569,44 @@
 				"implicit" : 1
 			}
 , 			{
+				"name" : "sagrada.mc.receive~.maxpat",
+				"bootpath" : "~/Documents/Max 7/Packages/Sagrada/help",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "sagrada.mc.receive~.p.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/Sagrada/help",
 				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "sagrada.mc.rotatechannels~.maxpat",
+				"bootpath" : "~/Documents/Max 7/Packages/Sagrada/patchers",
+				"patcherrelativepath" : "../patchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "sagrada.mc.send~.maxpat",
+				"bootpath" : "~/Documents/Max 8/Packages/AIM/patchers/lib",
+				"patcherrelativepath" : "../../AIM/patchers/lib",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "sagrada.multiout~.maxpat",
+				"bootpath" : "~/Documents/Max 7/Packages/Sagrada/patchers",
+				"patcherrelativepath" : "../patchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "sagrada.multiout~.p.maxpat",
+				"bootpath" : "~/Documents/Max 7/Packages/Sagrada/patchers",
+				"patcherrelativepath" : "../patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}

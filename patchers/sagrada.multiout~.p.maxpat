@@ -2,13 +2,14 @@
 	"patcher" : 	{
 		"fileversion" : 1,
 		"appversion" : 		{
-			"major" : 7,
-			"minor" : 3,
-			"revision" : 4,
-			"architecture" : "x86",
+			"major" : 8,
+			"minor" : 2,
+			"revision" : 2,
+			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
+		"classnamespace" : "box",
 		"rect" : [ 476.0, 292.0, 294.0, 217.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
@@ -36,6 +37,7 @@
 		"tags" : "",
 		"style" : "",
 		"subpatcher_template" : "",
+		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
 					"id" : "obj-4",
@@ -44,7 +46,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 6.0, 132.0, 206.0, 22.0 ],
-					"style" : ""
+					"text" : "set /myContext/ck.4"
 				}
 
 			}
@@ -56,7 +58,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 6.0, 23.0, 37.0, 22.0 ],
-					"style" : "",
 					"text" : "in~ 1"
 				}
 
@@ -68,8 +69,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "int" ],
-					"patching_rect" : [ 45.0, 50.19458, 167.0, 22.0 ],
-					"style" : "",
+					"patching_rect" : [ 45.0, 50.194580000000002, 167.0, 22.0 ],
 					"text" : "unpack s 0"
 				}
 
@@ -81,9 +81,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 45.0, 77.38916, 167.0, 22.0 ],
-					"style" : "",
-					"text" : "sprintf set #1.%s.%ld"
+					"patching_rect" : [ 45.0, 77.389160000000004, 168.0, 22.0 ],
+					"text" : "sprintf set #1/%s/%ld"
 				}
 
 			}
@@ -93,8 +92,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 6.0, 104.58374, 116.0, 22.0 ],
-					"style" : "",
+					"patching_rect" : [ 6.0, 104.583740000000006, 116.0, 22.0 ],
 					"text" : "send~ #0.dummy"
 				}
 
@@ -107,7 +105,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 45.0, 23.0, 30.0, 22.0 ],
-					"style" : "",
 					"text" : "in 1"
 				}
 
@@ -152,7 +149,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-4", 1 ],
-					"midpoints" : [ 54.5, 102.19458, 202.5, 102.19458 ],
+					"midpoints" : [ 54.5, 102.194580000000002, 202.5, 102.194580000000002 ],
 					"order" : 0,
 					"source" : [ "obj-29", 0 ]
 				}

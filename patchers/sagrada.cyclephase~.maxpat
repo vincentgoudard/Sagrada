@@ -45,8 +45,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 496.0, 148.0, 52.0, 22.0 ],
-					"text" : "phasor~"
+					"patching_rect" : [ 496.0, 148.0, 43.0, 22.0 ],
+					"text" : "cycle~"
 				}
 
 			}
