@@ -3,8 +3,8 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 2,
-			"revision" : 2,
+			"minor" : 3,
+			"revision" : 0,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -149,7 +149,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 317.0, 68.0, 159.0, 22.0 ],
+					"patching_rect" : [ 381.0, 213.0, 159.0, 22.0 ],
 					"text" : "r #1.voices"
 				}
 
@@ -161,7 +161,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 487.65347300000002, 40.0, 60.0, 22.0 ],
+					"patching_rect" : [ 551.653473000000076, 185.0, 60.0, 22.0 ],
 					"text" : "loadbang"
 				}
 
@@ -173,7 +173,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 487.65347300000002, 68.0, 161.0, 22.0 ],
+					"patching_rect" : [ 551.653473000000076, 213.0, 161.0, 22.0 ],
 					"text" : "v #1.voices"
 				}
 
@@ -185,7 +185,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "int", "int" ],
-					"patching_rect" : [ 317.0, 114.0, 73.0, 22.0 ],
+					"patching_rect" : [ 381.0, 259.0, 73.0, 22.0 ],
 					"text" : "maximum 2"
 				}
 
@@ -197,7 +197,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 317.0, 147.0, 57.0, 22.0 ],
+					"patching_rect" : [ 381.0, 292.0, 57.0, 22.0 ],
 					"text" : "chans $1"
 				}
 
@@ -335,7 +335,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-7", 0 ],
-					"midpoints" : [ 497.15347300000002, 96.5, 326.5, 96.5 ],
+					"midpoints" : [ 561.153473000000076, 241.5, 390.5, 241.5 ],
 					"source" : [ "obj-4", 0 ]
 				}
 
