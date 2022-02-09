@@ -2,13 +2,14 @@
 	"patcher" : 	{
 		"fileversion" : 1,
 		"appversion" : 		{
-			"major" : 7,
+			"major" : 8,
 			"minor" : 3,
-			"revision" : 4,
-			"architecture" : "x86",
+			"revision" : 0,
+			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
+		"classnamespace" : "box",
 		"rect" : [ 59.0, 104.0, 640.0, 480.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
@@ -36,15 +37,30 @@
 		"tags" : "",
 		"style" : "",
 		"subpatcher_template" : "",
+		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-2",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 122.0, 335.0, 42.0, 22.0 ],
+					"saved_object_attributes" : 					{
+						"attr_comment" : ""
+					}
+,
+					"text" : "out~ 1"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-5",
 					"maxclass" : "newobj",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 146.700012, 180.0, 96.0, 22.0 ],
-					"style" : "",
+					"patching_rect" : [ 146.700011999999987, 180.0, 96.0, 22.0 ],
 					"text" : ">~ 0"
 				}
 
@@ -56,8 +72,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 146.700012, 223.0, 119.0, 22.0 ],
-					"style" : "",
+					"patching_rect" : [ 146.700011999999987, 223.0, 119.0, 22.0 ],
 					"text" : "*~"
 				}
 
@@ -68,8 +83,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 238.200012, 32.0, 54.0, 20.0 ],
-					"style" : "",
+					"patching_rect" : [ 238.200011999999987, 32.0, 54.0, 20.0 ],
 					"text" : "sound in"
 				}
 
@@ -81,8 +95,11 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 246.700012, 54.0, 37.0, 22.0 ],
-					"style" : "",
+					"patching_rect" : [ 246.700011999999987, 54.0, 37.0, 22.0 ],
+					"saved_object_attributes" : 					{
+						"attr_comment" : ""
+					}
+,
 					"text" : "in~ 1"
 				}
 
@@ -93,8 +110,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 30.700012, 275.0, 195.0, 22.0 ],
-					"style" : "",
+					"patching_rect" : [ 30.700012000000001, 275.0, 195.0, 22.0 ],
 					"text" : "sagrada.multiout~ #1"
 				}
 
@@ -106,8 +122,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 4,
 					"outlettype" : [ "", "signal", "signal", "" ],
-					"patching_rect" : [ 30.700012, 88.0, 193.0, 22.0 ],
-					"style" : "",
+					"patching_rect" : [ 30.700012000000001, 88.0, 193.0, 22.0 ],
 					"text" : "sagrada.iosetter~ #1"
 				}
 
@@ -118,8 +133,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 312.200012, 32.0, 54.0, 20.0 ],
-					"style" : "",
+					"patching_rect" : [ 312.200012000000015, 32.0, 54.0, 20.0 ],
 					"text" : "duration"
 				}
 
@@ -131,8 +145,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 320.700012, 116.0, 57.0, 22.0 ],
-					"style" : "",
+					"patching_rect" : [ 320.700012000000015, 116.0, 57.0, 22.0 ],
 					"text" : "sah~ 0.5"
 				}
 
@@ -144,12 +157,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 320.700012, 54.0, 37.0, 22.0 ],
-					"saved_object_attributes" : 					{
-						"attr_comment" : ""
-					}
-,
-					"style" : "",
+					"patching_rect" : [ 320.700012000000015, 54.0, 37.0, 22.0 ],
 					"text" : "in~ 2"
 				}
 
@@ -161,8 +169,11 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 30.700012, 54.0, 30.0, 22.0 ],
-					"style" : "",
+					"patching_rect" : [ 30.700012000000001, 54.0, 30.0, 22.0 ],
+					"saved_object_attributes" : 					{
+						"attr_comment" : ""
+					}
+,
 					"text" : "in 1"
 				}
 
@@ -174,8 +185,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 146.700012, 144.0, 96.0, 22.0 ],
-					"style" : "",
+					"patching_rect" : [ 146.700011999999987, 144.0, 113.0, 22.0 ],
 					"text" : "sagrada.clickramp~"
 				}
 
@@ -249,6 +259,15 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-1", 0 ],
+					"order" : 1,
+					"source" : [ "obj-9", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-2", 0 ],
+					"order" : 0,
 					"source" : [ "obj-9", 0 ]
 				}
 

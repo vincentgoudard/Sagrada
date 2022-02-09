@@ -3,12 +3,13 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 0,
+			"minor" : 3,
 			"revision" : 0,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
+		"classnamespace" : "box",
 		"rect" : [ 611.0, 88.0, 477.0, 464.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
@@ -36,15 +37,45 @@
 		"tags" : "",
 		"style" : "",
 		"subpatcher_template" : "",
+		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-5",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 88.700012000000001, 358.0, 42.0, 22.0 ],
+					"saved_object_attributes" : 					{
+						"attr_comment" : ""
+					}
+,
+					"text" : "out~ 1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-4",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "signal" ],
+					"patching_rect" : [ 104.0, 53.0, 35.0, 22.0 ],
+					"saved_object_attributes" : 					{
+						"attr_comment" : ""
+					}
+,
+					"text" : "in~ 1"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-1",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 30.700012, 311.0, 195.0, 22.0 ],
-					"presentation_rect" : [ 30.700012, 311.0, 195.0, 22.0 ],
-					"style" : "",
+					"patching_rect" : [ 30.700012000000001, 311.0, 195.0, 22.0 ],
 					"text" : "sagrada.multiout~ #1"
 				}
 
@@ -56,9 +87,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 306.700012, 165.0, 72.0, 22.0 ],
-					"presentation_rect" : [ 306.700012, 165.0, 72.0, 22.0 ],
-					"style" : "",
+					"patching_rect" : [ 306.700012000000015, 165.0, 72.0, 22.0 ],
 					"text" : "route buffer"
 				}
 
@@ -70,9 +99,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 4,
 					"outlettype" : [ "", "signal", "signal", "" ],
-					"patching_rect" : [ 30.700012, 88.0, 193.0, 22.0 ],
-					"presentation_rect" : [ 30.700012, 88.0, 193.0, 22.0 ],
-					"style" : "",
+					"patching_rect" : [ 30.700012000000001, 88.0, 193.0, 22.0 ],
 					"text" : "sagrada.iosetter~ #1"
 				}
 
@@ -83,9 +110,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 229.200012, 32.0, 54.0, 20.0 ],
-					"presentation_rect" : [ 229.200012, 32.0, 54.0, 20.0 ],
-					"style" : "",
+					"patching_rect" : [ 229.200011999999987, 32.0, 54.0, 20.0 ],
 					"text" : "duration"
 				}
 
@@ -97,9 +122,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 237.700012, 165.0, 57.0, 22.0 ],
-					"presentation_rect" : [ 237.700012, 165.0, 57.0, 22.0 ],
-					"style" : "",
+					"patching_rect" : [ 237.700011999999987, 165.0, 57.0, 22.0 ],
 					"text" : "sah~ 0.5"
 				}
 
@@ -111,14 +134,12 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 237.700012, 54.0, 37.0, 22.0 ],
-					"presentation_rect" : [ 237.700012, 54.0, 37.0, 22.0 ],
+					"patching_rect" : [ 237.700011999999987, 54.0, 35.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"attr_comment" : ""
 					}
 ,
-					"style" : "",
-					"text" : "in~ 1"
+					"text" : "in~ 2"
 				}
 
 			}
@@ -129,13 +150,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 30.700012, 54.0, 30.0, 22.0 ],
-					"presentation_rect" : [ 30.700012, 54.0, 30.0, 22.0 ],
-					"saved_object_attributes" : 					{
-						"attr_comment" : ""
-					}
-,
-					"style" : "",
+					"patching_rect" : [ 30.700012000000001, 54.0, 30.0, 22.0 ],
 					"text" : "in 1"
 				}
 
@@ -147,9 +162,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 306.700012, 200.0, 74.0, 22.0 ],
-					"presentation_rect" : [ 306.700012, 200.0, 74.0, 22.0 ],
-					"style" : "",
+					"patching_rect" : [ 306.700012000000015, 200.0, 74.0, 22.0 ],
 					"text" : "prepend set"
 				}
 
@@ -161,9 +174,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 88.700012, 273.0, 77.0, 22.0 ],
-					"presentation_rect" : [ 88.700012, 273.0, 77.0, 22.0 ],
-					"style" : "",
+					"patching_rect" : [ 88.700012000000001, 273.0, 77.0, 22.0 ],
 					"text" : "*~"
 				}
 
@@ -175,9 +186,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 146.700012, 238.0, 198.0, 22.0 ],
-					"presentation_rect" : [ 146.700012, 238.0, 198.0, 22.0 ],
-					"style" : "",
+					"patching_rect" : [ 146.700011999999987, 238.0, 198.0, 22.0 ],
 					"text" : "wave~ #1.enveloppe"
 				}
 
@@ -189,9 +198,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 146.700012, 200.0, 136.0, 22.0 ],
-					"presentation_rect" : [ 146.700012, 200.0, 136.0, 22.0 ],
-					"style" : "",
+					"patching_rect" : [ 146.700011999999987, 200.0, 152.0, 22.0 ],
+					"presentation_linecount" : 2,
 					"text" : "sagrada.clickramp.bipolar~"
 				}
 
@@ -221,6 +229,15 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-1", 0 ],
+					"order" : 1,
+					"source" : [ "obj-2", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-5", 0 ],
+					"order" : 0,
 					"source" : [ "obj-2", 0 ]
 				}
 
@@ -235,8 +252,15 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-22", 0 ],
-					"midpoints" : [ 316.200012, 229.5, 156.200012, 229.5 ],
+					"midpoints" : [ 316.200012000000015, 229.5, 156.200011999999987, 229.5 ],
 					"source" : [ "obj-3", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-2", 0 ],
+					"source" : [ "obj-4", 0 ]
 				}
 
 			}
