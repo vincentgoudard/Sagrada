@@ -3,12 +3,13 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 0,
+			"minor" : 3,
 			"revision" : 0,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
+		"classnamespace" : "box",
 		"rect" : [ 209.0, 136.0, 392.0, 215.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
@@ -36,7 +37,21 @@
 		"tags" : "",
 		"style" : "",
 		"subpatcher_template" : "",
+		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"comment" : "options",
+					"id" : "obj-1",
+					"index" : 1,
+					"maxclass" : "inlet",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 43.306946000000003, 59.0, 30.0, 30.0 ]
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-45",
 					"linecount" : 2,
@@ -44,10 +59,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 43.306946, 100.0, 161.346527, 35.0 ],
+					"patching_rect" : [ 139.306946000000011, 86.0, 161.346527000000009, 35.0 ],
 					"presentation_linecount" : 2,
-					"presentation_rect" : [ 43.306946, 100.0, 161.346527, 35.0 ],
-					"style" : "",
 					"text" : "sagrada.paramhandler #1"
 				}
 
@@ -59,9 +72,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 43.306946, 59.0, 74.0, 22.0 ],
-					"presentation_rect" : [ 43.306946, 59.0, 74.0, 22.0 ],
-					"style" : "",
+					"patching_rect" : [ 139.306946000000011, 45.0, 74.0, 22.0 ],
 					"text" : "patcherargs"
 				}
 
@@ -77,12 +88,13 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 0,
+							"minor" : 3,
 							"revision" : 0,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
+						"classnamespace" : "box",
 						"rect" : [ 0.0, 0.0, 640.0, 480.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
@@ -110,6 +122,7 @@
 						"tags" : "",
 						"style" : "",
 						"subpatcher_template" : "",
+						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-7",
@@ -118,8 +131,6 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "bang" ],
 									"patching_rect" : [ 50.0, 100.0, 60.0, 22.0 ],
-									"presentation_rect" : [ 50.0, 100.0, 60.0, 22.0 ],
-									"style" : "",
 									"text" : "loadbang"
 								}
 
@@ -132,9 +143,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "", "bang" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 153.0, 111.5, 50.0, 22.0 ],
-									"presentation_rect" : [ 153.0, 111.5, 50.0, 22.0 ],
-									"style" : ""
+									"patching_rect" : [ 153.0, 111.5, 50.0, 22.0 ]
 								}
 
 							}
@@ -146,8 +155,6 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 153.0, 144.5, 54.0, 22.0 ],
-									"presentation_rect" : [ 153.0, 144.5, 54.0, 22.0 ],
-									"style" : "",
 									"text" : "open $1"
 								}
 
@@ -160,8 +167,6 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 50.0, 146.5, 84.0, 22.0 ],
-									"presentation_rect" : [ 50.0, 146.5, 84.0, 22.0 ],
-									"style" : "",
 									"text" : "threadcount 4"
 								}
 
@@ -174,9 +179,7 @@
 									"maxclass" : "outlet",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 95.5, 228.5, 30.0, 30.0 ],
-									"presentation_rect" : [ 95.5, 228.5, 30.0, 30.0 ],
-									"style" : ""
+									"patching_rect" : [ 95.5, 228.5, 30.0, 30.0 ]
 								}
 
 							}
@@ -212,17 +215,14 @@
  ]
 					}
 ,
-					"patching_rect" : [ 217.0, 113.0, 59.0, 22.0 ],
-					"presentation_rect" : [ 217.0, 113.0, 59.0, 22.0 ],
+					"patching_rect" : [ 313.0, 99.0, 59.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
 						"globalpatchername" : "",
-						"style" : "",
 						"tags" : ""
 					}
 ,
-					"style" : "",
 					"text" : "p options"
 				}
 
@@ -231,14 +231,12 @@
 				"box" : 				{
 					"comment" : "options",
 					"id" : "obj-3",
-					"index" : 1,
+					"index" : 2,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 185.653473, 55.0, 30.0, 30.0 ],
-					"presentation_rect" : [ 185.653473, 55.0, 30.0, 30.0 ],
-					"style" : ""
+					"patching_rect" : [ 281.653472999999963, 41.0, 30.0, 30.0 ]
 				}
 
 			}
@@ -249,16 +247,20 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 43.306946, 154.0, 325.0, 35.0 ],
-					"presentation_linecount" : 2,
-					"presentation_rect" : [ 43.306946, 154.0, 325.0, 35.0 ],
-					"style" : "",
-					"text" : "poly~ sagrada.busy~.p 1 @args #1 @parallel 1"
+					"patching_rect" : [ 43.306946000000003, 154.0, 346.0, 35.0 ],
+					"text" : "mc.poly~ sagrada.busy~.p 1 @args #1 @parallel 1"
 				}
 
 			}
  ],
 		"lines" : [ 			{
+				"patchline" : 				{
+					"destination" : [ "obj-78", 0 ],
+					"source" : [ "obj-1", 0 ]
+				}
+
+			}
+, 			{
 				"patchline" : 				{
 					"destination" : [ "obj-45", 1 ],
 					"source" : [ "obj-3", 0 ]
